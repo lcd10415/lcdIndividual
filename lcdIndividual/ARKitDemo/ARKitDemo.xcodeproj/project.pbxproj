@@ -21,6 +21,7 @@
 		9AD0B2951FD51B250047D5ED /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD0B2931FD51B090047D5ED /* SceneKit.framework */; };
 		9AD0B2981FD51B410047D5ED /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD0B2961FD51B2D0047D5ED /* CoreLocation.framework */; };
 		9AD0B2991FD51B470047D5ED /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD0B2971FD51B350047D5ED /* MapKit.framework */; };
+		9ADC03E61FD68B820095F3BB /* SceneKit Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC03E51FD68B820095F3BB /* SceneKit Scene.scn */; };
 		9AE505461F72493B0045A465 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE505451F72493B0045A465 /* AppDelegate.m */; };
 		9AE505481F72493B0045A465 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE505471F72493B0045A465 /* art.scnassets */; };
 		9AE5054B1F72493B0045A465 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5054A1F72493B0045A465 /* ViewController.m */; };
@@ -46,6 +47,7 @@
 		9AD0B2961FD51B2D0047D5ED /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9AD0B2971FD51B350047D5ED /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9AD0B29A1FD51C840047D5ED /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		9ADC03E51FD68B820095F3BB /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene.scn"; sourceTree = "<group>"; };
 		9AE505411F72493B0045A465 /* ARKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE505441F72493B0045A465 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AE505451F72493B0045A465 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				9AE505471F72493B0045A465 /* art.scnassets */,
 				9AE505491F72493B0045A465 /* ViewController.h */,
 				9AE5054A1F72493B0045A465 /* ViewController.m */,
+				9ADC03E51FD68B820095F3BB /* SceneKit Scene.scn */,
 				9AE5054C1F72493B0045A465 /* Main.storyboard */,
 				9AE5054F1F72493B0045A465 /* Assets.xcassets */,
 				9AE505511F72493B0045A465 /* LaunchScreen.storyboard */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AE505481F72493B0045A465 /* art.scnassets in Resources */,
+				9ADC03E61FD68B820095F3BB /* SceneKit Scene.scn in Resources */,
 				9AE505531F72493B0045A465 /* LaunchScreen.storyboard in Resources */,
 				9AE505501F72493B0045A465 /* Assets.xcassets in Resources */,
 				9AE5054E1F72493B0045A465 /* Main.storyboard in Resources */,

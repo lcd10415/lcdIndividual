@@ -33,7 +33,7 @@
     self.sceneView.session = self.session;
     
     // Create a new scene
-    SCNScene *scene = [SCNScene sceneNamed:@"art.scnassets/ship.scn"];
+    SCNScene *scene = [SCNScene sceneNamed:@"art.scnassets/JuliaVase001_-_Aqua_-_2mm.stl"];
     
     // Set the scene to the view
     self.sceneView.scene = scene;
