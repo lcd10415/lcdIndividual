@@ -1,0 +1,107 @@
+#! /bin/bash
+# LiuChaodong
+
+# 工程绝对路径
+project_path = $(pwd)
+
+# 工程名
+project_name = Unity-iPhone
+
+# Icon地址
+icon_path = $(pwd)
+
+# 打包模式 Debug/Release
+development_mode = Debug
+
+# scheme名
+scheme_name = com.iqiyi.zll
+
+# build 文件夹路径
+build_path = ${project_path}/build
+
+# build 文件所在路径
+exportOptionsPlistPath = ${project_path}/exportOptions.plist
+
+#导出.ipa文件所在路径
+exportFilePath = ${project_path}/ipa/${development_mode}
+
+echo '**** 正在清理工程*****'
+xcodebuild \
+clean -configuration ${development_mode} -quiet || exit
+echo '****   清理完成  ******'
+
+echo '****    正在编译工程 For '${development_mode}
+xcodebuild \
+archive -project ${project_path}/${project_name}.project \
+-scheme ${scheme_name} \
+-configuration ${development_mode} \
+-archivePath ${build_path}/${project_name}.xcarchive -quiet || exit 
+echo '**** 编译完成 ***'
+
+echo '***  正在打包   ***'
+xcodebuild -exportArchive -archivePath ${build_path}/${project_name}.xcarchive \-configuration ${development_mode} \
+-exportPath ${exportFilePath} \
+-exportOptionsPlist ${exportOptionsPlistPath} \
+-quiet ||  exit
+
+if [ -e  $exportFilePath/$scheme_name.ipa ]; then 
+	echo "****  ipa文件已导出     ******"
+	open $exportFilePath
+else
+	echo "****  创建ipa文件失败 *****"
+fi
+	echo "****  打包完成   ****"
+
+
+###################################################################
+
+# 替换图标
+useIcon(){
+	rm -rf project_path/Image.xcassets/AppIcon.appiconset  ||  exit
+	cp -r icon_path/AppIcon.appiconset project_path/Image.xcassets/AppIcon.appiconset  || exit
+	echo " **** 已更改AppIcon ***"
+}
+
+##################################################################
+useBuildID(){
+	cd ${project_path}/${project_name}.xcodeproj/
+	# sed -i 直接修改源文件，'' 备份文件名, 's/要被取代的字串/新的字串/g', 需要设置bundleID的文件
+        # 假设com.a.a是测试环境使用的，com.b.b是正式环境使用的
+   	sed -i '' 's/com.a.a/com.b.b/g' project.pbxproj || exit
+   	cd ..
+    	echo '* 已更改bundle ID 为：com.b.b'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
