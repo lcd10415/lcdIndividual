@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>自定义</string>
+	<string>手机号码</string>
+	<string>银行卡号</string>
+	<string>紧急联系人手机号码</string>
+	<string>身份证号码</string>
+	<string>邮箱号码</string>
+	<string>密保</string>
+	<string>备份</string>
+	<string>日期</string>
+	<string>网址</string>
+</array>
+</plist>
