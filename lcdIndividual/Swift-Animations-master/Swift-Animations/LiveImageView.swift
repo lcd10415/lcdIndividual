@@ -52,7 +52,7 @@ class LiveImageView: UIImageView {
     override init(frame: CGRect) {
         
         super.init(frame: frame)
-        pLayer = layer
+        pLayer = self.layer
     }
     
     required init?(coder aDecoder: NSCoder) {
