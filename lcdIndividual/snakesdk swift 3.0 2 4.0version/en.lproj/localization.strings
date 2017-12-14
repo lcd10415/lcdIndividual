@@ -1,0 +1,78 @@
+/* 
+  localization.strings
+  snakesdk
+
+  Created by mac on 16/7/22.
+  Copyright © 2016年 snakepop. All rights reserved.
+*/
+"accountForPhone" = "AccountConnectedPhoneNumber:";
+"passward" = "passward";
+"confirm" = "confirm";
+"returnLogin" = "returnLogin";
+"loginWay" = "SelectLoginWay";
+"hidden" = "hidden";
+"show" = "show";
+"phone" = "Phone:";
+"password" = "password";
+"account" = "account";
+"guest" = "guest";
+"exitGuestAccount" = "exitGuestAccount";
+"exitThirdPartyAccount" = "exitThirdPartyAccount";
+"exitGame" = "exitGame";
+"channelExit" = "channelExit";
+"Have not set the password" = "Have not set the password";
+"thirdParty" = "thirdParty";
+"account" = "Account:";
+"accountLogout" = "accountLogout";
+"login" = "login";
+"alertTitle" = "Warm Prompt";
+"welcomeToGame" = "welcome To Game";
+"loginFail" = "LoginFail";
+"passwordSetSuccess" = "modify password successfully";
+"phoneSetSuccess" = "modify phone successfully";
+"findPasswordSuccess" = "find password successfully";
+"accountLogin" = "accountLogin";
+"fastGame" = "fastGame";
+"accountTips" = "user name length is 6 to 32 characters";
+"passwordTips" = "password length is 8 to 32 characters";
+"termsOfService" = "TermsOfService";
+"privacyPolicy" = "PrivacyPolicy";
+"gameCenter" = "GameCenter";
+"passwordSet" = "SetPassword";
+"passwordChange" = "ChangePassword";
+"helpCenter" = "HelpCenter";
+"switchAccount" = "switchAccount";
+"bindSnackAccount" = "bindSnackAccount";
+"phoneRegister" = "phoneRegister";
+"registerAndLogin" = "registerAndLogin";
+"phoneHasRegistered" = "Phone Has Registered";
+"registerAndBinding" = "registerAndBinding";
+"verifyPhone" = "VerifyPhoneNumber:";
+"currentPhoneNumber" = "CurrentPhoneNumber:";
+"switchingAccount" = "SwitchingAccount:";
+"reObtain" = "To obtain";
+"Account Binding Success" = "Account binding success";
+"message" = "Pro, we're going to create tourists account for you, for quick game, suggest that after entering the game application or binding naughty snake account as soon as possible!^_^";
+"Point card" = "Whether to use point card to buy the goods";
+"accountBalance" = "accountBalance:";
+"exchangeRate" = "($1 = 100)";
+"rechargeAmount" = "rechargeAmount:";
+"paySuccess" = "paySuccess";
+"payFailed" = "payFailed";
+"payCancel" = "payCancel";
+"payResult" = "payResult";
+"payAgain" = "payAgain";
+"userCancel" = "User Cancelled";
+"userRefusedAuth" = "The user to authorize";
+"pay" = "Pay";
+"success" = "Success";
+"binding" = "binding";
+"return" = "return";
+"availablePoints" = "availablePoints:";
+"insufficientBalance" = "insufficientBalance";
+"tips" = "Warm Prompt";
+"firstInstallClient" = "pleaseFirstlytInstallClient";
+"sure" = "sure";
+"snakePayTips" = "Whether to use point card to buy the goods";
+"buySuccess" = "buySuccess";
+"returnToGame" = "returnToGame";

@@ -24,7 +24,6 @@ public func Width() -> CGFloat {
  - returns: Screen height.
  */
 public func Height() -> CGFloat {
-
     return UIScreen.main.bounds.size.height
 }
 

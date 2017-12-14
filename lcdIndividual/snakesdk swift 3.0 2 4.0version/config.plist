@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>gameCenter_url</key>
+	<string>http://sdk.snakepop.com:6060/web</string>
+	<key>helpCenter_url</key>
+	<string>http://snakepop.com/help/</string>
+	<key>termsOfService_url</key>
+	<string>http://snakepop.com/help/service.html</string>
+	<key>privacyPolicy_url</key>
+	<string>http://snakepop.com/help/policy.html</string>
+	<key>app_id</key>
+	<string>111520104046397594</string>
+	<key>channel_id</key>
+	<string>520</string>
+	<key>weixin_AppID</key>
+	<string>wx5e6f6036d92588fa</string>
+</dict>
+</plist>

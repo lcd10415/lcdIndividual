@@ -1,0 +1,75 @@
+/* 
+  localization.strings
+  snakesdk
+
+  Created by mac on 16/7/22.
+  Copyright © 2016年 snakepop. All rights reserved.
+*/
+"accountForPhone" = "账号关联的手机号:";
+"passward" = "的密码";
+"confirm" = "确认";
+"returnLogin" = "返回登录";
+"loginWay" = "选择登录方式";
+"hidden" = "隐藏";
+"show" = "显示";
+"login" = "登录";
+"accountLogout" = "账号退出";
+"phone" = "手机:";
+"account" = "账户";
+"guest" = "游客:";
+"password" = "的密码";
+"Have not set the password" = "尚未设置密码";
+"exitGuestAccount" = "退出游客账号";
+"exitThirdPartyAccount" = "退出第三方账号";
+"exitGame" = "退出游戏";
+"channelExit" = "渠道退出";
+"welcomeToGame" = "欢迎进入游戏";
+"loginFail" = "登陆失败";
+"passwordSetSuccess" = "设置密码成功";
+"phoneSetSuccess" = "手机设置成功";
+"findPasswordSuccess" = "找回密码成功";
+"accountLogin" = "账号登陆";
+"fastGame" = "快速游戏";
+"termsOfService" = "服务条款";
+"privacyPolicy" = "隐私政策";
+"passwordSet" = "设置密码";
+"passwordChange" = "修改密码";
+"helpCenter" = "帮助中心";
+"gameCenter" = "游戏中心";
+"reObtain" = "重新获取";
+"phoneHasRegistered" = "手机号已注册";
+"accountTips" = "用户名长度必须为6到32位字符";
+"passwordTips" = "密码长度必须为8到32位字符";
+"switchAccount" = "切换账号";
+"bindSnackAccount" = "绑定贪玩蛇账号";
+"phoneRegister" = "手机注册";
+"registerAndLogin" = "注册并登录";
+"registerAndBinding" = "注册并绑定";
+"verifyPhone" = "即将验证手机号码:";
+"currentPhoneNumber" = "当前手机账号:";
+"switchingAccount" = "你正在更换账号:";
+"Account Binding Success" = "账号绑定成功";
+"message" = "亲 , 我们即将为你创建游客账号,以便快速游戏,建议进入游戏后尽快申请或者绑定贪玩蛇账号哟！^_^";
+"Point card" = "是否使用点卡购买该商品";
+"accountBalance" = "账户余额:";
+"exchangeRate" = "(1元=100点)";
+"rechargeAmount" = "充值金额:";
+"paySuccess" = "支付成功";
+"payFailed" = "支付失败";
+"payCancel" = "支付取消";
+"pay" = "购买";
+"success" = "成功";
+"userCancel" = "用户取消";
+"userRefusedAuth" = "用户拒绝授权";
+"payResult" = "支付结果";
+"payAgain" = "继续充值";
+"binding" = "绑定";
+"return" = "返回";
+"availablePoints" = "可用点数:";
+"insufficientBalance" = "余额不足";
+"tips" = "温馨提示";
+"firstInstallClient" = "请先安装微信客户端";
+"sure" = "确定";
+"snakePayTips" = "是否使用点卡购买该商品?";
+"buySuccess" = "购买成功";
+"returnToGame" = "返回游戏";

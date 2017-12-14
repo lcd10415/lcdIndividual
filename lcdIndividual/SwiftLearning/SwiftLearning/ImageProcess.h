@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface ImageProcess : NSObject
+@interface ImageProcess : UIView
 
+@property(nonatomic,strong)UIImageView * header;
+
+- (void)setupRadiusImage:(NSInteger)num;
 @end

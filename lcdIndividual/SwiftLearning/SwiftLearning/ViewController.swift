@@ -113,9 +113,23 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate{
 //        let view = MapView()
 //        view.frame = CGRect(x:0,y:0,width:375,height:667);
 //        self.view.addSubview(view)
-        let test = Test()
-        print("%@",test);
+        
+//        let test = Test()
+//        print("%@",test);
+        
+//        let imageProcess = ImageProcess()
+//        imageProcess.frame = CGRect(x:0,y:0,width:100,height:100)
+//        imageProcess.center = self.view.center
+//        self.view.addSubview(imageProcess)
+//        imageProcess.setupRadiusImage(1)
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let db = DBTest()
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -129,6 +143,16 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate{
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return self.bouncePresent;
+    }
+    
+    //创建毛玻璃效果
+    func makeBlur() {
+        let bgView = UIImageView(image: UIImage(named:""))
+        bgView.frame = self.view.bounds
+        let blurEffect: UIBlurEffect = UIBlurEffect(style:.light)
+        let blurView = UIVisualEffectView(effect:blurEffect)
+        blurView.frame = CGRect(x:50,y:50,width:self.view.frame.width - 100,height: 200)
+        self.view.addSubview(blurView)
     }
     
     

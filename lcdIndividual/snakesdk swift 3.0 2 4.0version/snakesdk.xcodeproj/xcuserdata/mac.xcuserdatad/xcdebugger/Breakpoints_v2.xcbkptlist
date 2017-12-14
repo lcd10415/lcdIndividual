@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RechargeViewController.swift"
+            timestampString = "502613987.375276"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
+            landmarkName = "onRechargeClicked(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RechargeViewController.swift"
+            timestampString = "502613988.071137"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
+            landmarkName = "onRechargeClicked(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "snake.swift"
+            timestampString = "502697992.458379"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1077"
+            endingLineNumber = "1077"
+            landmarkName = "_genOrderHelper(type:payBy:money:realMoney:extra:productID:productName:productCount:productExtra:notifyURL:order_platform:role:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "snake.swift"
+            timestampString = "502698180.428715"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1071"
+            endingLineNumber = "1071"
+            landmarkName = "_genOrderHelper(type:payBy:money:realMoney:extra:productID:productName:productCount:productExtra:notifyURL:order_platform:role:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_CUSTOM_MODULE_NAME_.Snake.(_genOrderHelper in _CE654A7D7C72FB22A3B87C9FA4789346) (type : _CUSTOM_MODULE_NAME_.OrderType, payBy : _CUSTOM_MODULE_NAME_.PayBy, money : Swift.Int, realMoney : Swift.Int, extra : Swift.String, productID : Swift.String, productName : Swift.String, productCount : Swift.Int, productExtra : Swift.String, notifyURL : Swift.String, order_platform : Swift.String, role : Swift.Optional&lt;_CUSTOM_MODULE_NAME_.RoleInfo&gt;, completion : (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "snakesdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/snakesdk%205/snakesdk%20swift%203.0/snake.swift"
+                  timestampString = "502708983.744984"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1071"
+                  endingLineNumber = "1071"
+                  offsetFromSymbolStart = "3400">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_CUSTOM_MODULE_NAME_.Snake.((_genOrderHelper in _CE654A7D7C72FB22A3B87C9FA4789346) (type : _CUSTOM_MODULE_NAME_.OrderType, payBy : _CUSTOM_MODULE_NAME_.PayBy, money : Swift.Int, realMoney : Swift.Int, extra : Swift.String, productID : Swift.String, productName : Swift.String, productCount : Swift.Int, productExtra : Swift.String, notifyURL : Swift.String, order_platform : Swift.String, role : Swift.Optional&lt;_CUSTOM_MODULE_NAME_.RoleInfo&gt;, completion : (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, Swift.Bool) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "snakesdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/snakesdk%205/snakesdk%20swift%203.0/snake.swift"
+                  timestampString = "502708983.748534"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1069"
+                  endingLineNumber = "1069"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SnakeLoginOrBindingViewController.swift"
+            timestampString = "502708334.295965"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "onLoginOrBindingClicked(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SnakeLoginOrBindingViewController.swift"
+            timestampString = "502708392.574053"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "onLoginOrBindingClicked(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

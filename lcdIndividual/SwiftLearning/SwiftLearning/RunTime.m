@@ -7,6 +7,7 @@
 //
 
 #import "RunTime.h"
+#import "Lock.h"
 #import <objc/message.h>
 
 @implementation RunTime
@@ -94,4 +95,142 @@ Runtime
     }
     return objc;
 }
+//导入头文件 <objc/runtime.h> <objc/message.h>
+/*
+ 类在runtime中的表示
+ struct objc_class{
+    Class isa; 指针， 实例的isa指向类对象，类对象的isa指向元类
+    Class super_class 指向父类
+    const char * name 类名
+    struct objc_ivar_list * ivars 成员变量列表
+    struct objc_method_list **methodLists 方法列表
+    struct objc_cache *cache 缓存，一种优化，掉用过的方法存入缓存列表，下次调用先找到缓存
+    struct objc_protocol_list * protocols协议列表
+ }
+ 
+ [target doSomething];会被转化成 objc_msgSend(target,@selector(doSomething));
+ 
+ Runtime用法：
+ 在OOP术语中，消息传递是指一种在对象之间发送和接收消息的通信模式。 在Objective-C中，消息传递用于在调用类和类实例的方法，即接收者接收需要执行的消息
+ 
+ 1.消息机制 objc_msgSend(target,@selector(doSomething))
+ 2.获取对象的所有属性，方法，成员变量，和遵循的协议和添加属性、方法等  ivar表示成员变量 class_addIvar class_addMethod class_addProperty class_addProtocol
+    class_copyPropertyList  获取属性列表
+    class_copyMethodList    获取方法列表
+    class_copyIvarList      获取成员变量列表
+    ivar_getName            获取成员变量名字
+ 3.方法交换Method Swizzling  方法替换
+ 4.动态添加方法和属性(这个就是Catory添加属性的实现本质)
+ 5.实现NSCoding的自动归档和自动解档
+ 6.消息转发机制
+ */
+- (void)getObjectInfo{
+    unsigned int count;
+    
+    //获取Lock类的属性列表
+    objc_property_t * propertyList = class_copyPropertyList([Lock class], &count);
+    for (unsigned int i = 0; i<count; i++) {
+        const char * propertyName = property_getName(propertyList[i]);
+        NSLog(@"%@",[NSString stringWithUTF8String:propertyName]);
+    }
+    free(propertyList);
+    
+    //获取Lock类的方法列表
+    Method * methodLists = class_copyMethodList([Lock class], &count);
+    for (unsigned int i = 0; i<count; i++) {
+        Method method = methodLists[i];
+        NSLog(@"%@",NSStringFromSelector(method_getName(method)));
+    }
+    free(methodLists);
+    
+    //获取成员变量列表
+    Ivar * ivarList = class_copyIvarList([Lock class], &count);
+    for (unsigned int i=0; i<count; i++) {
+        Ivar myIvar = ivarList[i];
+        const char * ivarName = ivar_getName(myIvar);
+        NSLog(@"%@",[NSString stringWithUTF8String:ivarName]);
+    }
+    free(ivarList);
+}
+
+- (void)encodeWithCoder:(NSCoder *)encoder{
+    unsigned int count = 0;
+    Ivar * ivars = class_copyIvarList([self class], &count);
+    for (unsigned int i = 0; i<count; i++) {
+        Ivar ivar = ivars[i];
+        const char * name = ivar_getName(ivar);
+        //归档
+        NSString * key = [NSString stringWithUTF8String:name];
+        id value = [self valueForKey:key];
+        [encoder encodeObject:value forKey:key];
+    }
+    free(ivars);
+}
+
+- (id)initWithCoder:(NSCoder *)decoder{
+    if (self = [super init]) {
+        unsigned int count = 0;
+        Ivar * ivars = class_copyIvarList([self class], &count);
+        for (unsigned int i = 0; i < count; i++) {
+            Ivar ivar = ivars[i];
+            const char * name = ivar_getName(ivar);
+            NSString * key = [NSString stringWithUTF8String:name];
+            //解档
+            id value = [decoder decodeObjectForKey:key];
+            [self setValue:value forKey:key];
+        }
+        free(ivars);
+    }
+    return self;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end

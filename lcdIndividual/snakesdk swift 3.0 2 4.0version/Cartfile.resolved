@@ -1,0 +1,4 @@
+github "JohnLui/Pitaya" "v1.4.2"
+git "https://github.com/adow/SecrecySwift.git" "0.3.4"
+github "tomvanzummeren/TZStackView" "1.2.0"
+

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4F8959B6A36275EEA2AAF4EAE781E68AAE135E29",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4F8959B6A36275EEA2AAF4EAE781E68AAE135E29" : 0,
+    "65CF01E300282E46169539DEC164FA4894A7F029" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "186BD3BD-4C78-42B2-B9F9-1B75A4BB7931",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4F8959B6A36275EEA2AAF4EAE781E68AAE135E29" : "snakesdk%20swift%203.0\/",
+    "65CF01E300282E46169539DEC164FA4894A7F029" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "snakesdk",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "snakesdk.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/git.1ktower.work\/snakepop\/snakesdk-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4F8959B6A36275EEA2AAF4EAE781E68AAE135E29"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/git.1ktower.work\/1ktower-sdk\/snakesdk-ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "65CF01E300282E46169539DEC164FA4894A7F029"
+    }
+  ]
+}

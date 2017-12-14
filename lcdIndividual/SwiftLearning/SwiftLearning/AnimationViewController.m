@@ -23,6 +23,7 @@
 }
 
 - (void)setKeyAnimation{
+    //关键帧动画1.path(CGPathRef对象) 2.values
     CAKeyframeAnimation * ani = [CAKeyframeAnimation animationWithKeyPath:@"transform.roration.z"];
     ani.values = @[@(-M_PI_4 / 5),@(M_PI_4/5),@(-M_PI_4 / 5)];
     ani.repeatCount = CGFLOAT_MAX;
@@ -40,7 +41,7 @@
     [self.view.layer addAnimation:keyAni forKey:nil];
 }
 
-//转场动画CATransition KCATransitionFade 淡出效果
+//转场动画CATransition KCATransitionFade 淡出效果  kCATransitionMoveIn 移入  kCATransitionPush 平移  kCATransitionReveal显露
 //KCATransitionMoveIn 移动到旧视图
 -(void)addTransitionAnimation{
     CATransition * transition = [CATransition animation];
@@ -189,6 +190,7 @@
  */
 
 //CAShapeLayer
+
 
 
 

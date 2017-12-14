@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67F400F0A2B4B175F13E7904 /* Pods_SwiftLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A3AA8A30C23A8FAEB2B0A4 /* Pods_SwiftLearning.framework */; };
 		9A06CF1D1F4FB79B000AC087 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A06CF1C1F4FB79B000AC087 /* View.xib */; };
 		9A06CF1F1F4FC8CE000AC087 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A06CF1E1F4FC8CE000AC087 /* Storyboard.storyboard */; };
 		9A0B51AA1F4FF5380085A4F0 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0B51A91F4FF5380085A4F0 /* Data.plist */; };
 		9A0B54391F53FDAF0085A4F0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B54381F53FDAF0085A4F0 /* File.swift */; };
-		9A2B1D8F1FD1376D004C5F31 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B1D8E1FD1376D004C5F31 /* Test.m */; };
 		9A464E4A1F063BC700482C2F /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A464E411F063BC700482C2F /* 0.png */; };
 		9A464E4B1F063BC700482C2F /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A464E421F063BC700482C2F /* 1.png */; };
 		9A464E4C1F063BC700482C2F /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A464E431F063BC700482C2F /* 2.png */; };
@@ -28,8 +28,13 @@
 		9A6401C11FB9779700B03C7A /* RunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6401C01FB9779700B03C7A /* RunTime.m */; };
 		9A6401C41FB98A8000B03C7A /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6401C31FB98A8000B03C7A /* Block.m */; };
 		9A7B2F9B1F9F123000F76CE1 /* ImageProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7B2F9A1F9F123000F76CE1 /* ImageProcess.m */; };
+		9A8441941FE0CE18000562E3 /* DBTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8441931FE0CE18000562E3 /* DBTest.m */; };
+		9A8446181FE10238000562E3 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8446171FE10238000562E3 /* Student.m */; };
+		9A84461B1FE13748000562E3 /* Knoweledge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84461A1FE13748000562E3 /* Knoweledge.m */; };
 		9ACBA6111F4FF1440055052A /* Relaxation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBA6101F4FF1440055052A /* Relaxation.swift */; };
 		9AD677AA1FA6F5BE005756AA /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD677A91FA6F5BE005756AA /* AnimationViewController.m */; };
+		9AE79DA61FE2211D003D366A /* Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE79DA51FE2211D003D366A /* Subscript.swift */; };
+		9AE79FB61FE27054003D366A /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE79FB51FE27048003D366A /* Contacts.framework */; };
 		9AF076911F189BC00075A9B4 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF076901F189BC00075A9B4 /* Singleton.swift */; };
 		9AF537291F5E4854004DD7D1 /* BridgeOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF537281F5E4854004DD7D1 /* BridgeOC.m */; };
 		9AF5372F1F5EAC1D004DD7D1 /* Arithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF5372E1F5EAC1D004DD7D1 /* Arithmetic.m */; };
@@ -42,12 +47,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D697121AAAFD7B8C42E15DC /* Pods-SwiftLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning.debug.xcconfig"; sourceTree = "<group>"; };
 		9A06CF1C1F4FB79B000AC087 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		9A06CF1E1F4FC8CE000AC087 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		9A0B51A91F4FF5380085A4F0 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		9A0B54381F53FDAF0085A4F0 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		9A2B1D8D1FD1376D004C5F31 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
-		9A2B1D8E1FD1376D004C5F31 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		9A464E411F063BC700482C2F /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 		9A464E421F063BC700482C2F /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		9A464E431F063BC700482C2F /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
@@ -70,9 +74,18 @@
 		9A6401C31FB98A8000B03C7A /* Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Block.m; sourceTree = "<group>"; };
 		9A7B2F991F9F123000F76CE1 /* ImageProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageProcess.h; sourceTree = "<group>"; };
 		9A7B2F9A1F9F123000F76CE1 /* ImageProcess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageProcess.m; sourceTree = "<group>"; };
+		9A84418E1FE0CB0F000562E3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		9A8441921FE0CE18000562E3 /* DBTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBTest.h; sourceTree = "<group>"; };
+		9A8441931FE0CE18000562E3 /* DBTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBTest.m; sourceTree = "<group>"; };
+		9A8446161FE10238000562E3 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		9A8446171FE10238000562E3 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		9A8446191FE13748000562E3 /* Knoweledge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Knoweledge.h; sourceTree = "<group>"; };
+		9A84461A1FE13748000562E3 /* Knoweledge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Knoweledge.m; sourceTree = "<group>"; };
 		9ACBA6101F4FF1440055052A /* Relaxation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relaxation.swift; sourceTree = "<group>"; };
 		9AD677A81FA6F5BE005756AA /* AnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		9AD677A91FA6F5BE005756AA /* AnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		9AE79DA51FE2211D003D366A /* Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscript.swift; sourceTree = "<group>"; };
+		9AE79FB51FE27048003D366A /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		9AF076901F189BC00075A9B4 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		9AF537271F5E4854004DD7D1 /* BridgeOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeOC.h; sourceTree = "<group>"; };
 		9AF537281F5E4854004DD7D1 /* BridgeOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeOC.m; sourceTree = "<group>"; };
@@ -87,6 +100,8 @@
 		9AF710B51F04E6320029135E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AF710B71F04E6320029135E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AF710BD1F04EF330029135E /* TimeShaft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeShaft.swift; sourceTree = "<group>"; };
+		BD1AA4655B42B9598F4D0DDD /* Pods-SwiftLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning.release.xcconfig"; sourceTree = "<group>"; };
+		F1A3AA8A30C23A8FAEB2B0A4 /* Pods_SwiftLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,12 +109,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AE79FB61FE27054003D366A /* Contacts.framework in Frameworks */,
+				67F400F0A2B4B175F13E7904 /* Pods_SwiftLearning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A84418D1FE0CB0F000562E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AE79FB51FE27048003D366A /* Contacts.framework */,
+				9A84418E1FE0CB0F000562E3 /* libsqlite3.0.tbd */,
+				F1A3AA8A30C23A8FAEB2B0A4 /* Pods_SwiftLearning.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9AF7109F1F04E6320029135E = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +135,8 @@
 				9AF5372C1F5E49F7004DD7D1 /* Header.h */,
 				9AF710AA1F04E6320029135E /* SwiftLearning */,
 				9AF710A91F04E6320029135E /* Products */,
+				9A84418D1FE0CB0F000562E3 /* Frameworks */,
+				EA2D720AE0605D2E4C72E0DD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,11 +156,11 @@
 				9A464E431F063BC700482C2F /* 2.png */,
 				9A464E441F063BC700482C2F /* 3.png */,
 				9A464E451F063BC700482C2F /* 4.png */,
+				9AE79DA51FE2211D003D366A /* Subscript.swift */,
 				9A464E461F063BC700482C2F /* 5.png */,
 				9A464E471F063BC700482C2F /* 6.png */,
 				9A464E481F063BC700482C2F /* 7.png */,
 				9A0B51A91F4FF5380085A4F0 /* Data.plist */,
-				9A464E491F063BC700482C2F /* 8.png */,
 				9AF5372D1F5EAC1D004DD7D1 /* Arithmetic.h */,
 				9AF5372E1F5EAC1D004DD7D1 /* Arithmetic.m */,
 				9A4B3B621F98885800FB7DF6 /* TransitionAnimation.h */,
@@ -143,15 +172,19 @@
 				9A06CF1E1F4FC8CE000AC087 /* Storyboard.storyboard */,
 				9AF710AD1F04E6320029135E /* ViewController.swift */,
 				9ACBA6101F4FF1440055052A /* Relaxation.swift */,
+				9A8441921FE0CE18000562E3 /* DBTest.h */,
+				9A8441931FE0CE18000562E3 /* DBTest.m */,
+				9A8446161FE10238000562E3 /* Student.h */,
+				9A8446171FE10238000562E3 /* Student.m */,
 				9A7B2F991F9F123000F76CE1 /* ImageProcess.h */,
 				9A7B2F9A1F9F123000F76CE1 /* ImageProcess.m */,
+				9A8446191FE13748000562E3 /* Knoweledge.h */,
+				9A84461A1FE13748000562E3 /* Knoweledge.m */,
 				9A60A16C1FD8DE6500EFE69A /* Lock.h */,
 				9A60A16D1FD8DE6500EFE69A /* Lock.m */,
 				9AD677A81FA6F5BE005756AA /* AnimationViewController.h */,
 				9AD677A91FA6F5BE005756AA /* AnimationViewController.m */,
 				9A0B54381F53FDAF0085A4F0 /* File.swift */,
-				9A2B1D8D1FD1376D004C5F31 /* Test.h */,
-				9A2B1D8E1FD1376D004C5F31 /* Test.m */,
 				9AF537271F5E4854004DD7D1 /* BridgeOC.h */,
 				9AF537281F5E4854004DD7D1 /* BridgeOC.m */,
 				9A6401BF1FB9779700B03C7A /* RunTime.h */,
@@ -160,11 +193,21 @@
 				9AF710BD1F04EF330029135E /* TimeShaft.swift */,
 				9AF710AF1F04E6320029135E /* Main.storyboard */,
 				9AF710B21F04E6320029135E /* Assets.xcassets */,
+				9A464E491F063BC700482C2F /* 8.png */,
 				9AF710B41F04E6320029135E /* LaunchScreen.storyboard */,
 				9A52E9611F41DE0100C10818 /* TypeFirst.swift */,
 				9AF710B71F04E6320029135E /* Info.plist */,
 			);
 			path = SwiftLearning;
+			sourceTree = "<group>";
+		};
+		EA2D720AE0605D2E4C72E0DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D697121AAAFD7B8C42E15DC /* Pods-SwiftLearning.debug.xcconfig */,
+				BD1AA4655B42B9598F4D0DDD /* Pods-SwiftLearning.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AF710BA1F04E6320029135E /* Build configuration list for PBXNativeTarget "SwiftLearning" */;
 			buildPhases = (
+				1835B6779C6582EFBBE6C192 /* [CP] Check Pods Manifest.lock */,
 				9AF710A41F04E6320029135E /* Sources */,
 				9AF710A51F04E6320029135E /* Frameworks */,
 				9AF710A61F04E6320029135E /* Resources */,
+				3F1C4104541319303F4A79B9 /* [CP] Embed Pods Frameworks */,
+				7689EF49720BA092369900A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +294,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1835B6779C6582EFBBE6C192 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftLearning-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F1C4104541319303F4A79B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7689EF49720BA092369900A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9AF710A41F04E6320029135E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -255,21 +355,24 @@
 			files = (
 				9AF710BE1F04EF330029135E /* TimeShaft.swift in Sources */,
 				9AD677AA1FA6F5BE005756AA /* AnimationViewController.m in Sources */,
-				9A2B1D8F1FD1376D004C5F31 /* Test.m in Sources */,
 				9AF076911F189BC00075A9B4 /* Singleton.swift in Sources */,
 				9A59B6FF1F9D9E820074B349 /* MapView.m in Sources */,
 				9A0B54391F53FDAF0085A4F0 /* File.swift in Sources */,
 				9ACBA6111F4FF1440055052A /* Relaxation.swift in Sources */,
 				9A6401C41FB98A8000B03C7A /* Block.m in Sources */,
+				9A8441941FE0CE18000562E3 /* DBTest.m in Sources */,
 				9AF537291F5E4854004DD7D1 /* BridgeOC.m in Sources */,
 				9A60A16E1FD8DE6500EFE69A /* Lock.m in Sources */,
 				9A4B3B641F98885800FB7DF6 /* TransitionAnimation.m in Sources */,
 				9A6401C11FB9779700B03C7A /* RunTime.m in Sources */,
+				9A84461B1FE13748000562E3 /* Knoweledge.m in Sources */,
+				9AE79DA61FE2211D003D366A /* Subscript.swift in Sources */,
 				9A7B2F9B1F9F123000F76CE1 /* ImageProcess.m in Sources */,
 				9AF5372F1F5EAC1D004DD7D1 /* Arithmetic.m in Sources */,
 				9AF710AE1F04E6320029135E /* ViewController.swift in Sources */,
 				9AF710AC1F04E6320029135E /* AppDelegate.swift in Sources */,
 				9A52E9621F41DE0100C10818 /* TypeFirst.swift in Sources */,
+				9A8446181FE10238000562E3 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,11 +495,13 @@
 		};
 		9AF710BB1F04E6320029135E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D697121AAAFD7B8C42E15DC /* Pods-SwiftLearning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KY976W2GUP;
 				INFOPLIST_FILE = SwiftLearning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.1ktower.snakepop.SwiftLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,11 +513,13 @@
 		};
 		9AF710BC1F04E6320029135E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD1AA4655B42B9598F4D0DDD /* Pods-SwiftLearning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KY976W2GUP;
 				INFOPLIST_FILE = SwiftLearning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.1ktower.snakepop.SwiftLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
