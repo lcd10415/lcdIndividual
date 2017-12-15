@@ -193,6 +193,356 @@
 
 
 
+//QuartzCore.framework
+/*
+ Core Animation:Objective-C API做二维动画
+ Core Image:图像和视频处理(滤镜，扭曲，转换)
+ */
+
+//Quartz 2D
+/*
+ CGPathRef：用于向量图，可创建路径，并进行填充或描画(stroke)
+ CGImageRef：用于表示bitmap图像和基于采样数据的bitmap图像遮罩。
+ CGLayerRef：用于表示可用于重复绘制(如背景)和幕后(offscreen)绘制的绘画层
+ CGPatternRef：用于重绘图
+ CGShadingRef、CGGradientRef：用于绘制渐变
+ CGFunctionRef：用于定义回调函数，该函数包含一个随机的浮点值参数。当为阴影创建渐变时使用该类型
+ CGColorRef, CGColorSpaceRef：用于告诉Quartz如何解释颜色
+ CGImageSourceRef,CGImageDestinationRef：用于在Quartz中移入移出数据
+ CGFontRef：用于绘制文本
+ CGPDFDictionaryRef, CGPDFObjectRef, CGPDFPageRef, CGPDFStream, CGPDFStringRef, and CGPDFArrayRef：用于访问PDF的元数
+ CGPDFScannerRef, CGPDFContentStreamRef：用于解析PDF元数据
+ CGPSConverterRef：用于将PostScript转化成PDF。在iOS中不能使用
+ */
+
+//绘图创建步骤(重写drawRect函数) 图像的重绘（刷帧）
+/*
+ 1、我们首先需要开启图形上下文`CGContextRef ctx = UIGraphicsGetCurrentContext();
+ //为C语言，创建对象无需加*`。
+ 2、然后对我们想绘制的图片或者图形进行一系列的操作（添加路径，设置属性等）。
+ 3、最后就是渲染在我的View上面。
+ 
+ 调用重绘view对象的
+ 
+ - (void)setNeedsDisplay; 刷新全部view
+ - (void)setNeedsDisplayInRect:(CGRect)rect; 刷新区域为rect的view
+ 
+ drawRect方法使用注意点
+ 在iOS开发中不允许开发者直接调用drawRect:方法，刷新绘制内容需要调用setNeedsDisplay方法。
+ 若使用CALayer绘图，只能在drawInContext: 中（类似于drawRect）绘制，或者在delegate中的相应方法绘制。同样也是调用setNeedDisplay等间接调用以上方法
+ 若要实时画图，不能使用gestureRecognizer，只能使用touchbegan等方法来调用setNeedsDisplay实时刷新屏幕
+ 凡是“UI”开头的相关绘图函数，都是UIKit对Core Graphics的封装
+ 
+ 画图实例
+    1.设置线段的宽度 CGContextSetLineWidth
+    2.设置线段颜色   CGContextSetRGBStrokeColor
+    3.设置起点和终点(圆角 直角) CGContextSetlineCap
+    4.设置连接点样式(圆角 尖角) CGContextSetLineJoin
+    5.设置竖线       CGContextSetLineDash
+    6.填充颜色(实心)  CGContextSetRGBFillColor [UIColor redColor] setFill]
+
+ 主要渲染填充模式CGPathDrawingMode
+        kCGPathStroke:画线（空心），只有边框
+        kCGPathFill:  填充（实心），只有填充（非零缠绕数填充），不绘制边框
+        kCGPathEOFill:奇偶规则填充（多条路径交叉时，奇数交叉填充，偶交叉不填充）
+        kCGPathFillStroke：既有边框又有填充
+        kCGPathEOFillStroke：奇偶填充并绘制边框
+ 
+ 渲染方式写法
+        1. CGContextDrawPath(context, kCGPathStroke);
+        2. CGContextStrokePath(ctx);
+ 
+ 主要画图Api
+        1.直线 CGContextAddLineToPoint
+        2.椭圆 CGContextAddEllipseInRect
+        3.矩形 CGContextAddRect
+        4.圆   CGContextAddArc
+ 
+ */
+- (void)drawRect1:(CGRect)rect{
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGContextMoveToPoint(ctx, 50, 50);
+    CGContextMoveToPoint(ctx, 100, 100);
+    CGContextSetLineWidth(ctx, 2);
+    CGContextStrokePath(ctx);
+    free(ctx);
+}
+
+- (void)drawRect2:(CGRect)rect{
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    //获取路径
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathMoveToPoint(path, NULL, 50, 50);
+    CGPathMoveToPoint(path, NULL, 100, 100);
+//    将路径添加到上下文中
+    CGContextAddPath(ctx, path);
+    CGContextStrokePath(ctx);
+    free(path);
+    free(ctx);
+}
+- (void)drawRect3:(CGRect)rect{
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    UIBezierPath * path = [[UIBezierPath alloc]init];
+    [path moveToPoint:CGPointMake(50, 50)];
+    [path addLineToPoint:CGPointMake(100, 100)];
+    
+    //将路径添加到上下文
+    CGContextAddPath(ctx, path.CGPath);
+    CGContextStrokePath(ctx);
+    free(ctx);
+}
+//C(CGPath)+OC(UIBezierPath)
+- (void)drawRect4:(CGRect)rect{
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathMoveToPoint(path, NULL, 50, 50);
+    CGPathMoveToPoint(path, NULL, 100, 100);
+    
+    UIBezierPath * bPath = [UIBezierPath bezierPathWithCGPath:path];
+    [bPath addLineToPoint:CGPointMake(60, 60)];
+    CGContextAddPath(ctx, bPath.CGPath);
+    free(ctx);
+    free(path);
+}
+
+//OC实现(UIBezierPath)
+- (void)drawRect5:(CGRect)rect{
+    UIBezierPath * path = [UIBezierPath bezierPath];
+    [path moveToPoint:CGPointMake(10, 10)];
+    [path addLineToPoint:CGPointMake(50, 50)];
+    [path stroke];
+}
+//直线 CGContextMoveToPoint(ctx,0,40);
+//TODO: 画直线
+-(void)drawLine
+{
+    //获得当前画板（图形上下文对象）为C语言，创建对象无需加*
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    //!!!: 相关属性设置 可选
+    //设置线条的颜色
+    //CGContextSetRGBStrokeColor(ctx, 0.2, 0.2, 0.2, 1.0);
+    CGContextSetStrokeColorWithColor(ctx, [UIColor redColor].CGColor);
+    CGContextSetLineWidth(ctx, 10); // 设置线段的宽度
+    CGContextSetLineJoin(ctx, kCGLineJoinRound); // 设置线段起点和终点的样式都为圆角
+    CGContextSetLineCap(ctx, kCGLineCapRound);   // 设置线段的转角样式为圆角
+    
+    //开始画线, x，y为开始点的坐标
+    CGContextMoveToPoint(ctx, 0, 40);
+    //画直线, x，y为线条结束点的坐标
+    CGContextAddLineToPoint(ctx, self.bounds.size.width,40);
+    CGContextStrokePath(ctx);//渲染，绘制出一条空心的线段
+}
+
+//TODO: 三角形
+- (void)drawTriangle
+{
+    CGContextRef triangle = UIGraphicsGetCurrentContext(); // 获得图形上下文
+    CGContextMoveToPoint(triangle, 150, 40); // 设置起点
+    CGContextAddLineToPoint(triangle, 60, 200); // 设置第二个点
+    CGContextAddLineToPoint(triangle,240, 200); // 设置第三个点
+    CGContextClosePath(triangle); // 关闭起点和终点
+    CGContextStrokePath(triangle); // 渲染，绘制出三角形
+}
+//TODO: 矩形
+-(void)drawaRect
+{
+    //获得当前画板
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    //颜色
+    CGContextSetRGBStrokeColor(ctx, 0.2, 0.2, 0.2, 1.0);
+    //画线的宽度
+    CGContextSetLineWidth(ctx, 0.25);
+    CGContextAddRect(ctx, CGRectMake(2, 2, 30, 30));
+    CGContextStrokePath(ctx);
+}
+
+/**
+ *  画圆
+ *  @param ctx        上下文
+ *  @param x          圆起点坐标X
+ *  @param y          圆起点坐标y
+ *  @param radius     圆的半径
+ *  @param startAngle 起始角度
+ *  @param endAngle   结束角度
+ *  @param clockwise  顺逆时针
+ */
+//CGContextAddArc(CGContextRef ctx, CGFloat x, CGFloat y,CGFloat radius, CGFloat startAngle, CGFloat endAngle, int clockwise)
+
+//TODO: 画圆
+- (void)drawRoundRect
+{
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGContextSetRGBStrokeColor(ctx, 0.2, 0.2, 0.2, 1.0);//颜色
+    CGContextSetLineWidth(ctx, 0.25);//画线的宽度
+    
+    CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);//设置圆心位置
+    CGFloat radius = self.bounds.size.height / 2;//设置半径
+    CGFloat startAngle = - M_PI_2;//圆起点位置
+    CGFloat endAngle = - M_PI_2 +  M_PI * 2;//圆终点位置
+    CGContextAddArc(ctx,center.x,center.y,radius,startAngle, endAngle, 0);
+    
+    CGContextDrawPath(ctx, kCGPathStroke); //绘制路径
+}
+//TODO: 环形
+-(void)drawAnnular
+{
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);//设置圆心位置
+    CGFloat radius = self.bounds.size.height / 2;//设置半径
+    CGFloat startAngle = - M_PI_2;//圆起点位置
+    CGFloat endAngle = - M_PI_2 +  M_PI * 2;//圆终点位置
+    CGContextAddArc(ctx,center.x,center.y,radius-5,startAngle, endAngle, 0);
+    CGContextSetLineWidth(ctx, 10);
+    [[UIColor greenColor]set];
+    CGContextDrawPath(ctx, kCGPathStroke); //绘制路径
+}
+//绘制圆弧 就是一个圆形的一部分
+-(void)circularArc
+{
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);//设置圆心位置
+    CGFloat radius = self.bounds.size.height / 2;//设置半径
+    CGFloat startAngle = - M_PI_2;//圆起点位置
+    CGFloat endAngle = - M_PI_2 +  M_PI*1.2;//圆终点位置
+    CGContextAddArc(context, center.x,center.y,radius,startAngle, endAngle, 1);
+    
+    //绘制圆弧
+    CGContextDrawPath(context, kCGPathStroke);
+}
+
+//椭圆
+- (void)drawRect:(CGRect)rect
+{
+    CGContextRef circular = UIGraphicsGetCurrentContext();
+    CGContextAddEllipseInRect(circular, CGRectMake(100, 100, 100, 80));//宽高相等=圆，宽高不等=椭圆
+    CGContextSetRGBFillColor(circular, 1.0, 0, 1.0, 1);// 设置颜色
+    CGContextFillPath(circular); // 渲染，将实心圆形画出
+}
+
+//扇形
+-(void)drawPie
+{
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);//设置圆心位置
+    CGFloat radius = self.bounds.size.height / 2;//设置半径
+    CGFloat startAngle = - M_PI_2;//圆起点位置
+    CGFloat endAngle = - M_PI_2 +  M_PI * 1.5;//圆终点位置
+    [[UIColor greenColor]set];
+    
+    //顺时针画扇形
+    CGContextMoveToPoint(ctx, center.x, center.y);
+    CGContextAddArc(ctx, center.x, center.y, radius, startAngle,endAngle, 0);
+    CGContextClosePath(ctx);
+    CGContextDrawPath(ctx, kCGPathEOFillStroke);
+}
+//绘制文本内容
+//绘图只能在当前位方法中调用,否则无法得到图形上下文
+- (void)drawRect7:(CGRect)rect{
+    //要显示的文字
+    NSString *str = @"这是要现实的文本Text。。。。";
+    //绘制文字显示的指定区域
+    CGRect rect = CGRectMake(20, 50, 374, 500);
+    //字体大小
+    UIFont *font = [UIFont systemFontOfSize:25];
+    //字体颜色
+    UIColor *color = [UIColor redColor];
+    //初始化段落样式
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+    //居中对齐
+    NSTextAlignment textAlignment = NSTextAlignmentCenter;
+    //设置段落样式
+    paragraphStyle.alignment = textAlignment;
+    NSDictionary *attributes= @{NSFontAttributeName:font,NSForegroundColorAttributeName:color,
+                                NSParagraphStyleAttributeName:style};
+    [str drawInRect:rect withAttributes:attributes];
+}
+
+//绘制图片&&图片剪切CGContextClip
+- (void)drawImage{
+    UIImage *image = [UIImage imageNamed:@"theImage.jpg"];
+    //从某一点开始绘制
+    [image drawAtPoint:CGPointMake(10, 50)];
+    //绘制到指定的矩形中，注意如果大小不合适会会进行拉伸，图像会形变
+    [image drawInRect:CGRectMake(10, 50, 300, 450)];
+    //平铺绘制
+    //    [image drawAsPatternInRect:CGRectMake(0, 0, 320, 568)];
+}
+//绘图只能在当前位方法中调用,否则无法得到图形上下文
+- (void)drawRect8:(CGRect)rect{
+    //获取图形上下文
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    //指定上下文显示的范围
+    CGContextAddEllipseInRect(context, CGRectMake(80, 50, 100, 100));
+    //裁剪
+    CGContextClip(context);
+    //获取图片
+    UIImage *image = [UIImage imageNamed:@"mv2.jpg"];
+    [image drawAtPoint:CGPointMake(50, 50)];
+}
+
+//截屏
+-(void)cutScreen{
+    /*
+     1、获得一个图片的画布
+     2、获得画布的上下文
+     3、设置截图的参数
+     4、截图
+     5、关闭图片的上下文
+     6、保存
+     */
+    //1、获得一个图片的画布
+    UIGraphicsBeginImageContext(self.frame.size);
+    //2、获得一个上下文
+    [self addRound];
+    //3、设置参数
+    /*
+     CGSize size:截图尺寸
+     BOOL opaque：是否不透明,YES不透明
+     CGFloat scale：比例
+     */
+    UIGraphicsBeginImageContextWithOptions(self.frame.size, YES, 1);
+    //4、开始截图
+    UIImage image = UIGraphicsGetImageFromCurrentImageContext();
+    //5、关闭图片上下文
+    UIGraphicsEndImageContext();
+    //保存到相册
+    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:),nil);
+}
+//保存到相册时的回调方法
+- (void)image:(UIImage* )image didFinishSavingWithError:(NSError *)error
+  contextInfo:(void )contextInfo{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
