@@ -49,7 +49,7 @@
 //使用drowRect绘制简单图形
 - (void)drawImage{
     //获取上下文
-    CGContextRef context=UIGraphicsGetCurrentContext();
+    CGContextRef context = UIGraphicsGetCurrentContext();
     //设置绘制地区的颜色
     CGContextSetRGBFillColor(context, 1, 0, 0, 1);
     //设置绘制的位置和大小
@@ -169,7 +169,7 @@
 //请求定位权限以及定位属性
 - (void)locationAuth{
     //定位管理器
-    CLLocationManager * _locationManager=[[CLLocationManager alloc]init];
+    CLLocationManager * _locationManager = [[CLLocationManager alloc]init];
     //如果没有授权则请求用户授权
     if ([CLLocationManager authorizationStatus]==kCLAuthorizationStatusNotDetermined){
         [_locationManager requestWhenInUseAuthorization];

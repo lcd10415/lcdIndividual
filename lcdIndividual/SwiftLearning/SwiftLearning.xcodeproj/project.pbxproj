@@ -33,6 +33,7 @@
 		9A84461B1FE13748000562E3 /* Knoweledge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84461A1FE13748000562E3 /* Knoweledge.m */; };
 		9ACBA6111F4FF1440055052A /* Relaxation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBA6101F4FF1440055052A /* Relaxation.swift */; };
 		9AD677AA1FA6F5BE005756AA /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD677A91FA6F5BE005756AA /* AnimationViewController.m */; };
+		9ADB3BCC1FEB907400290FAD /* DropAndDrag.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB3BCB1FEB907400290FAD /* DropAndDrag.m */; };
 		9AE79DA61FE2211D003D366A /* Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE79DA51FE2211D003D366A /* Subscript.swift */; };
 		9AE79FB61FE27054003D366A /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE79FB51FE27048003D366A /* Contacts.framework */; };
 		9AF076911F189BC00075A9B4 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF076901F189BC00075A9B4 /* Singleton.swift */; };
@@ -84,6 +85,8 @@
 		9ACBA6101F4FF1440055052A /* Relaxation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relaxation.swift; sourceTree = "<group>"; };
 		9AD677A81FA6F5BE005756AA /* AnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		9AD677A91FA6F5BE005756AA /* AnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		9ADB3BCA1FEB907400290FAD /* DropAndDrag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropAndDrag.h; sourceTree = "<group>"; };
+		9ADB3BCB1FEB907400290FAD /* DropAndDrag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropAndDrag.m; sourceTree = "<group>"; };
 		9AE79DA51FE2211D003D366A /* Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscript.swift; sourceTree = "<group>"; };
 		9AE79FB51FE27048003D366A /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		9AF076901F189BC00075A9B4 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				9ACBA6101F4FF1440055052A /* Relaxation.swift */,
 				9A8441921FE0CE18000562E3 /* DBTest.h */,
 				9A8441931FE0CE18000562E3 /* DBTest.m */,
+				9ADB3BCA1FEB907400290FAD /* DropAndDrag.h */,
+				9ADB3BCB1FEB907400290FAD /* DropAndDrag.m */,
 				9A8446161FE10238000562E3 /* Student.h */,
 				9A8446171FE10238000562E3 /* Student.m */,
 				9A7B2F991F9F123000F76CE1 /* ImageProcess.h */,
@@ -360,6 +365,7 @@
 				9A0B54391F53FDAF0085A4F0 /* File.swift in Sources */,
 				9ACBA6111F4FF1440055052A /* Relaxation.swift in Sources */,
 				9A6401C41FB98A8000B03C7A /* Block.m in Sources */,
+				9ADB3BCC1FEB907400290FAD /* DropAndDrag.m in Sources */,
 				9A8441941FE0CE18000562E3 /* DBTest.m in Sources */,
 				9AF537291F5E4854004DD7D1 /* BridgeOC.m in Sources */,
 				9A60A16E1FD8DE6500EFE69A /* Lock.m in Sources */,
