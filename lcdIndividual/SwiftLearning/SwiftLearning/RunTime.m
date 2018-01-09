@@ -155,9 +155,11 @@ Runtime
 
 - (void)encodeWithCoder:(NSCoder *)encoder{
     unsigned int count = 0;
+//    成员变量列表
     Ivar * ivars = class_copyIvarList([self class], &count);
     for (unsigned int i = 0; i<count; i++) {
         Ivar ivar = ivars[i];
+//        成员变量名
         const char * name = ivar_getName(ivar);
         //归档
         NSString * key = [NSString stringWithUTF8String:name];

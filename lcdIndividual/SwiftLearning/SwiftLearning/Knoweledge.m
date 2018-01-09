@@ -31,7 +31,7 @@
 //@property (nonatomic,strong)UIImageView * leftView;
 @property (nonatomic,strong)UIButton * rightView;
 
-@property (nonatomic,strong)UITextFieldViewMode rightView;
+//@property (nonatomic,strong)UITextFieldViewMode rightView;
 @end
 
 @implementation Knoweledge
@@ -54,11 +54,11 @@
     CGContextSetRGBFillColor(context, 1, 0, 0, 1);
     //设置绘制的位置和大小
     CGContextFillRect(context, CGRectMake(0, 100, 100, 100));
-    NSString * text=@"文字";
-    UIFont * font=[UIFont systemFontOfSize:14];
+    NSString * text = @"文字";
+    UIFont * font   = [UIFont systemFontOfSize:14];
     //设置文字的位置
     [text drawAtPoint:CGPointMake(0, 200) withAttributes:font.fontDescriptor.fontAttributes];
-    UIImage * img=[UIImage imageNamed:@""];
+    UIImage * img  = [UIImage imageNamed:@""];
     [img drawInRect:CGRectMake(0, 300, 100, 100)];
 }
 //可变数组与不可变数组之间的转换
@@ -233,23 +233,21 @@
 -(id)initWithFrame:(CGRect)frame drawingLeft:(UIImageView *)icon drawingRight:(UIButton *)bu{
     self = [super init];
     if (self) {
-        self.leftView = icon;
-        self.leftViewMode = UITextFieldViewModeAlways;
+//        self.leftView = icon;
+//        self.leftViewMode = UITextFieldViewModeAlways;
         self.rightView= bu;
-        self.rightViewMode=UITextFieldViewModeAlways;
+//        self.rightViewMode=UITextFieldViewModeAlways;
     }
     return self;
 }
--(CGRect)leftViewRectForBounds:(CGRect)bounds{
-    CGRect iconRect = [super leftViewRectForBounds:bounds];
-    iconRect.origin.x += 5;// 右偏10
-    return iconRect;
+-(void)leftViewRectForBounds:(CGRect)bounds{
+//    CGRect iconRect = [super leftViewRectForBounds:bounds];
+//    iconRect.origin.x += 5;// 右偏10
 }
--(CGRect)rightViewRectForBounds:(CGRect)bounds
+-(void)rightViewRectForBounds:(CGRect)bounds
 {
-    CGRect burect=[super rightViewRectForBounds:bounds];
-    burect.origin.x +=-10;
-    return burect;
+//    CGRect burect=[super rightViewRectForBounds:bounds];
+//    burect.origin.x +=-10;
 }
 
 //获取版本号提示版本更新
@@ -312,23 +310,23 @@
 }
 
 /** 解决手势冲突 */
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
-    if ([touch.view isDescendantOfView:cicView]) {
-        return NO;
-    }
-    return YES;
-}
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+//    if ([touch.view isDescendantOfView:cicView]) {
+//        return NO;
+//    }
+//    return YES;
+//}
 
 - (void)getWIFIName{
-    NSString *wifiName = @"Not Found";
-    CFArrayRef myArray = (id)CNCopySupportedInterfaces();
-    if (myArray != nil) {
-        CFDictionaryRef myDict = CNCopyCurrentNetworkInfo(CFArrayGetValueAtIndex(myArray, 0));
-        if (myDict != nil) {
-            NSDictionary *dict = (NSDictionary*)CFBridgingRelease(myDict);
-            wifiName = [dict valueForKey:@"SSID"];
-        }
-    }
+//    NSString *wifiName = @"Not Found";
+//    CFArrayRef myArray = (id)CNCopySupportedInterfaces();
+//    if (myArray != nil) {
+//        CFDictionaryRef myDict = CNCopyCurrentNetworkInfo(CFArrayGetValueAtIndex(myArray, 0));
+//        if (myDict != nil) {
+//            NSDictionary *dict = (NSDictionary*)CFBridgingRelease(myDict);
+//            wifiName = [dict valueForKey:@"SSID"];
+//        }
+//    }
 }
 
 // 判断两个数组是否相同
@@ -389,7 +387,7 @@
 }
 
 //计算一段NSString在视图中渲染出来的尺寸
-+ (CGSize)sizeOfString:(NSString *)textString font:(UIFont *)font bound:(CGSize)bound {
++ (void)sizeOfString:(NSString *)textString font:(UIFont *)font bound:(CGSize)bound {
     NSMutableParagraphStyle * paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
     paragraphStyle.alignment = NSTextAlignmentLeft;
@@ -400,9 +398,9 @@
                                   NSParagraphStyleAttributeName : paragraphStyle};
     
     NSAttributedString* attributedString = [[NSAttributedString alloc] initWithString:textString attributes:attributes];
-    return [TTTAttributedLabel sizeThatFitsAttributedString:attributedString
-                                            withConstraints:CGSizeMake(bound.width, 999)
-                                     limitedToNumberOfLines:0];
+//    return [TTTAttributedLabel sizeThatFitsAttributedString:attributedString
+//                                            withConstraints:CGSizeMake(bound.width, 999)
+//                                     limitedToNumberOfLines:0];
 }
 
 - (void)getName{
@@ -418,16 +416,17 @@
 }
 + (NSString *)getDeviceId
 {
-    NSString * currentDeviceUUIDStr = [SSKeychain passwordForService:@" "account:@"uuid"];
-    if (currentDeviceUUIDStr == nil || [currentDeviceUUIDStr isEqualToString:@""])
-    {
-        NSUUID * currentDeviceUUID  = [UIDevice currentDevice].identifierForVendor;
-        currentDeviceUUIDStr = currentDeviceUUID.UUIDString;
-        currentDeviceUUIDStr = [currentDeviceUUIDStr stringByReplacingOccurrencesOfString:@"-" withString:@""];
-        currentDeviceUUIDStr = [currentDeviceUUIDStr lowercaseString];
-        [SSKeychain setPassword: currentDeviceUUIDStr forService:@" "account:@"uuid"];
-    }
-    return currentDeviceUUIDStr;
+//    NSString * currentDeviceUUIDStr = [SSKeychain passwordForService:@" "account:@"uuid"];
+//    if (currentDeviceUUIDStr == nil || [currentDeviceUUIDStr isEqualToString:@""])
+//    {
+//        NSUUID * currentDeviceUUID  = [UIDevice currentDevice].identifierForVendor;
+//        currentDeviceUUIDStr = currentDeviceUUID.UUIDString;
+//        currentDeviceUUIDStr = [currentDeviceUUIDStr stringByReplacingOccurrencesOfString:@"-" withString:@""];
+//        currentDeviceUUIDStr = [currentDeviceUUIDStr lowercaseString];
+//        [SSKeychain setPassword: currentDeviceUUIDStr forService:@" "account:@"uuid"];
+//    }
+//    return currentDeviceUUIDStr;
+    return @"";
 }
 
 

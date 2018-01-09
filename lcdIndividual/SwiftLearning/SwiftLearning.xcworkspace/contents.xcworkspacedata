@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/a1/Desktop/practise/lcdIndividual/SwiftLearning/ErrorHandle.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Socket.h">
+   </FileRef>
+   <FileRef
+      location = "group:Socket.m">
+   </FileRef>
+   <FileRef
       location = "group:/Users/a1/Desktop/practise/lcdIndividual/SwiftLearning/SwiftLearning/Subscript.swift">
    </FileRef>
    <FileRef

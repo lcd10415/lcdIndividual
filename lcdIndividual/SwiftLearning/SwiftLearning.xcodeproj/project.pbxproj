@@ -27,11 +27,15 @@
 		9A60A16E1FD8DE6500EFE69A /* Lock.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A60A16D1FD8DE6500EFE69A /* Lock.m */; };
 		9A6401C11FB9779700B03C7A /* RunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6401C01FB9779700B03C7A /* RunTime.m */; };
 		9A6401C41FB98A8000B03C7A /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6401C31FB98A8000B03C7A /* Block.m */; };
+		9A7266A120030AC700B54426 /* InterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7266A020030AC700B54426 /* InterView.m */; };
 		9A7B2F9B1F9F123000F76CE1 /* ImageProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7B2F9A1F9F123000F76CE1 /* ImageProcess.m */; };
 		9A8441941FE0CE18000562E3 /* DBTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8441931FE0CE18000562E3 /* DBTest.m */; };
 		9A8446181FE10238000562E3 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8446171FE10238000562E3 /* Student.m */; };
 		9A84461B1FE13748000562E3 /* Knoweledge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84461A1FE13748000562E3 /* Knoweledge.m */; };
+		9AABC2272000B47100572C8D /* ErrorHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AABC2262000B47100572C8D /* ErrorHandle.swift */; };
 		9ACBA6111F4FF1440055052A /* Relaxation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBA6101F4FF1440055052A /* Relaxation.swift */; };
+		9ACE9AD2200473A200DB49A6 /* EffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE9AD1200473A200DB49A6 /* EffectView.m */; };
+		9ACE9AD42004B2F000DB49A6 /* NewFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE9AD32004B2F000DB49A6 /* NewFeature.swift */; };
 		9AD677AA1FA6F5BE005756AA /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD677A91FA6F5BE005756AA /* AnimationViewController.m */; };
 		9ADB3BCC1FEB907400290FAD /* DropAndDrag.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB3BCB1FEB907400290FAD /* DropAndDrag.m */; };
 		9AE79DA61FE2211D003D366A /* Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE79DA51FE2211D003D366A /* Subscript.swift */; };
@@ -73,6 +77,8 @@
 		9A6401C01FB9779700B03C7A /* RunTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTime.m; sourceTree = "<group>"; };
 		9A6401C21FB98A8000B03C7A /* Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
 		9A6401C31FB98A8000B03C7A /* Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Block.m; sourceTree = "<group>"; };
+		9A72669F20030AC700B54426 /* InterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterView.h; sourceTree = "<group>"; };
+		9A7266A020030AC700B54426 /* InterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterView.m; sourceTree = "<group>"; };
 		9A7B2F991F9F123000F76CE1 /* ImageProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageProcess.h; sourceTree = "<group>"; };
 		9A7B2F9A1F9F123000F76CE1 /* ImageProcess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageProcess.m; sourceTree = "<group>"; };
 		9A84418E1FE0CB0F000562E3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
@@ -82,7 +88,11 @@
 		9A8446171FE10238000562E3 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		9A8446191FE13748000562E3 /* Knoweledge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Knoweledge.h; sourceTree = "<group>"; };
 		9A84461A1FE13748000562E3 /* Knoweledge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Knoweledge.m; sourceTree = "<group>"; };
+		9AABC2262000B47100572C8D /* ErrorHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ErrorHandle.swift; path = /Users/a1/Desktop/practise/lcdIndividual/SwiftLearning/ErrorHandle.swift; sourceTree = "<absolute>"; };
 		9ACBA6101F4FF1440055052A /* Relaxation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relaxation.swift; sourceTree = "<group>"; };
+		9ACE9AD0200473A200DB49A6 /* EffectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectView.h; sourceTree = "<group>"; };
+		9ACE9AD1200473A200DB49A6 /* EffectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectView.m; sourceTree = "<group>"; };
+		9ACE9AD32004B2F000DB49A6 /* NewFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeature.swift; sourceTree = "<group>"; };
 		9AD677A81FA6F5BE005756AA /* AnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		9AD677A91FA6F5BE005756AA /* AnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		9ADB3BCA1FEB907400290FAD /* DropAndDrag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropAndDrag.h; sourceTree = "<group>"; };
@@ -133,6 +143,7 @@
 		9AF7109F1F04E6320029135E = {
 			isa = PBXGroup;
 			children = (
+				9AABC2262000B47100572C8D /* ErrorHandle.swift */,
 				9A6401C21FB98A8000B03C7A /* Block.h */,
 				9A6401C31FB98A8000B03C7A /* Block.m */,
 				9AF5372C1F5E49F7004DD7D1 /* Header.h */,
@@ -168,6 +179,8 @@
 				9AF5372E1F5EAC1D004DD7D1 /* Arithmetic.m */,
 				9A4B3B621F98885800FB7DF6 /* TransitionAnimation.h */,
 				9A4B3B631F98885800FB7DF6 /* TransitionAnimation.m */,
+				9A72669F20030AC700B54426 /* InterView.h */,
+				9A7266A020030AC700B54426 /* InterView.m */,
 				9AF710AB1F04E6320029135E /* AppDelegate.swift */,
 				9A06CF1C1F4FB79B000AC087 /* View.xib */,
 				9A59B6FD1F9D9E820074B349 /* MapView.h */,
@@ -183,6 +196,9 @@
 				9A8446171FE10238000562E3 /* Student.m */,
 				9A7B2F991F9F123000F76CE1 /* ImageProcess.h */,
 				9A7B2F9A1F9F123000F76CE1 /* ImageProcess.m */,
+				9ACE9AD32004B2F000DB49A6 /* NewFeature.swift */,
+				9ACE9AD0200473A200DB49A6 /* EffectView.h */,
+				9ACE9AD1200473A200DB49A6 /* EffectView.m */,
 				9A8446191FE13748000562E3 /* Knoweledge.h */,
 				9A84461A1FE13748000562E3 /* Knoweledge.m */,
 				9A60A16C1FD8DE6500EFE69A /* Lock.h */,
@@ -373,10 +389,14 @@
 				9A6401C11FB9779700B03C7A /* RunTime.m in Sources */,
 				9A84461B1FE13748000562E3 /* Knoweledge.m in Sources */,
 				9AE79DA61FE2211D003D366A /* Subscript.swift in Sources */,
+				9ACE9AD2200473A200DB49A6 /* EffectView.m in Sources */,
 				9A7B2F9B1F9F123000F76CE1 /* ImageProcess.m in Sources */,
+				9AABC2272000B47100572C8D /* ErrorHandle.swift in Sources */,
+				9A7266A120030AC700B54426 /* InterView.m in Sources */,
 				9AF5372F1F5EAC1D004DD7D1 /* Arithmetic.m in Sources */,
 				9AF710AE1F04E6320029135E /* ViewController.swift in Sources */,
 				9AF710AC1F04E6320029135E /* AppDelegate.swift in Sources */,
+				9ACE9AD42004B2F000DB49A6 /* NewFeature.swift in Sources */,
 				9A52E9621F41DE0100C10818 /* TypeFirst.swift in Sources */,
 				9A8446181FE10238000562E3 /* Student.m in Sources */,
 			);

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface Knoweledge : NSObject<CLLocationManagerDelegate>
+@interface Knoweledge : NSObject
 
 @property(nonatomic,strong)UIViewController * vc;
 

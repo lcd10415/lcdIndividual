@@ -9,7 +9,7 @@
 #import "AnimationViewController.h"
 
 @interface AnimationViewController ()
-
+@property(nonatomic,strong)UITextField * nameText;
 @end
 
 @implementation AnimationViewController
@@ -21,13 +21,36 @@
     [self addTransitionAnimation];
     // Do any additional setup after loading the view.
 }
+-(void)setBasicAnimation{
+    CABasicAnimation * basic = [CABasicAnimation animation];
+    basic.keyPath = @"position.x";
+    basic.fromValue = @77;
+    basic.toValue = @455;
+    basic.duration = 1;
+    
+//    设置fillMode动画留在最终哪个状态  设置removedOnCompletion防止它被自动移除
+    basic.fillMode = kCAFillModeForwards;
+    basic.removedOnCompletion = NO;
+}
 
+//关键帧动画定义超过两个步骤
 - (void)setKeyAnimation{
     //关键帧动画1.path(CGPathRef对象) 2.values
     CAKeyframeAnimation * ani = [CAKeyframeAnimation animationWithKeyPath:@"transform.roration.z"];
     ani.values = @[@(-M_PI_4 / 5),@(M_PI_4/5),@(-M_PI_4 / 5)];
     ani.repeatCount = CGFLOAT_MAX;
     [self.view.layer addAnimation:ani forKey:@"rotation"];
+}
+
+//输入密码错误，输入框抖动
+- (void)setMyAnition{
+    CAKeyframeAnimation * keyAni = [CAKeyframeAnimation animation];
+    keyAni.keyPath = @"position.x";
+    keyAni.values = @[@0,@10,@-10,@10,@0];
+    keyAni.keyTimes = @[@0,@(1/6.0),@(3/6.0),@(5/6.0),@1];//指定关键帧动画发生的时间
+    keyAni.duration = 0.4;
+    keyAni.additive = YES;
+    [self.nameText.layer addAnimation:keyAni forKey:@"shake"];
 }
 
 - (void)setFly{
@@ -212,7 +235,7 @@
  CGFontRef：用于绘制文本
  CGPDFDictionaryRef, CGPDFObjectRef, CGPDFPageRef, CGPDFStream, CGPDFStringRef, and CGPDFArrayRef：用于访问PDF的元数
  CGPDFScannerRef, CGPDFContentStreamRef：用于解析PDF元数据
- CGPSConverterRef：用于将PostScript转化成PDF。在iOS中不能使用
+ CGPSConverterRef：用于将PostScript转化成PDF。在iOS中不能使用
  */
 
 //绘图创建步骤(重写drawRect函数) 图像的重绘（刷帧）
@@ -247,7 +270,7 @@
         kCGPathEOFill:奇偶规则填充（多条路径交叉时，奇数交叉填充，偶交叉不填充）
         kCGPathFillStroke：既有边框又有填充
         kCGPathEOFillStroke：奇偶填充并绘制边框
- 
+ 
  渲染方式写法
         1. CGContextDrawPath(context, kCGPathStroke);
         2. CGContextStrokePath(ctx);
@@ -271,13 +294,13 @@
 - (void)drawRect2:(CGRect)rect{
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     //获取路径
-    CGMutablePathRef path = CGPathCreateMutable();
-    CGPathMoveToPoint(path, NULL, 50, 50);
-    CGPathMoveToPoint(path, NULL, 100, 100);
+//    CGMutablePathRef path1 = CGPathCreateMutable();
+//    CGPathMoveToPoint(path1, NULL, 50, 50);
+//    CGPathMoveToPoint(path1, NULL, 100, 100);
 //    将路径添加到上下文中
-    CGContextAddPath(ctx, path);
+//    CGContextAddPath(ctx, path1);
     CGContextStrokePath(ctx);
-    free(path);
+//    free(path1);
     free(ctx);
 }
 - (void)drawRect3:(CGRect)rect{
@@ -332,7 +355,7 @@
     //开始画线, x，y为开始点的坐标
     CGContextMoveToPoint(ctx, 0, 40);
     //画直线, x，y为线条结束点的坐标
-    CGContextAddLineToPoint(ctx, self.bounds.size.width,40);
+//    CGContextAddLineToPoint(ctx, self.bounds.size.width,40);
     CGContextStrokePath(ctx);//渲染，绘制出一条空心的线段
 }
 
@@ -378,23 +401,23 @@
     CGContextSetRGBStrokeColor(ctx, 0.2, 0.2, 0.2, 1.0);//颜色
     CGContextSetLineWidth(ctx, 0.25);//画线的宽度
     
-    CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);//设置圆心位置
-    CGFloat radius = self.bounds.size.height / 2;//设置半径
-    CGFloat startAngle = - M_PI_2;//圆起点位置
-    CGFloat endAngle = - M_PI_2 +  M_PI * 2;//圆终点位置
-    CGContextAddArc(ctx,center.x,center.y,radius,startAngle, endAngle, 0);
+//    CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);//设置圆心位置
+//    CGFloat radius = self.bounds.size.height / 2;//设置半径
+//    CGFloat startAngle = - M_PI_2;//圆起点位置
+//    CGFloat endAngle = - M_PI_2 +  M_PI * 2;//圆终点位置
+//    CGContextAddArc(ctx,center.x,center.y,radius,startAngle, endAngle, 0);
     
-    CGContextDrawPath(ctx, kCGPathStroke); //绘制路径
+//    CGContextDrawPath(ctx, kCGPathStroke); //绘制路径
 }
 //TODO: 环形
 -(void)drawAnnular
 {
     CGContextRef ctx = UIGraphicsGetCurrentContext();
-    CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);//设置圆心位置
-    CGFloat radius = self.bounds.size.height / 2;//设置半径
+//    CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);//设置圆心位置
+//    CGFloat radius = self.bounds.size.height / 2;//设置半径
     CGFloat startAngle = - M_PI_2;//圆起点位置
     CGFloat endAngle = - M_PI_2 +  M_PI * 2;//圆终点位置
-    CGContextAddArc(ctx,center.x,center.y,radius-5,startAngle, endAngle, 0);
+//    CGContextAddArc(ctx,center.x,center.y,radius-5,startAngle, endAngle, 0);
     CGContextSetLineWidth(ctx, 10);
     [[UIColor greenColor]set];
     CGContextDrawPath(ctx, kCGPathStroke); //绘制路径
@@ -403,11 +426,11 @@
 -(void)circularArc
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);//设置圆心位置
-    CGFloat radius = self.bounds.size.height / 2;//设置半径
+//    CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);//设置圆心位置
+//    CGFloat radius = self.bounds.size.height / 2;//设置半径
     CGFloat startAngle = - M_PI_2;//圆起点位置
     CGFloat endAngle = - M_PI_2 +  M_PI*1.2;//圆终点位置
-    CGContextAddArc(context, center.x,center.y,radius,startAngle, endAngle, 1);
+//    CGContextAddArc(context, center.x,center.y,radius,startAngle, endAngle, 1);
     
     //绘制圆弧
     CGContextDrawPath(context, kCGPathStroke);
@@ -426,15 +449,15 @@
 -(void)drawPie
 {
     CGContextRef ctx = UIGraphicsGetCurrentContext();
-    CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);//设置圆心位置
-    CGFloat radius = self.bounds.size.height / 2;//设置半径
+//    CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);//设置圆心位置
+//    CGFloat radius = self.bounds.size.height / 2;//设置半径
     CGFloat startAngle = - M_PI_2;//圆起点位置
     CGFloat endAngle = - M_PI_2 +  M_PI * 1.5;//圆终点位置
     [[UIColor greenColor]set];
     
     //顺时针画扇形
-    CGContextMoveToPoint(ctx, center.x, center.y);
-    CGContextAddArc(ctx, center.x, center.y, radius, startAngle,endAngle, 0);
+//    CGContextMoveToPoint(ctx, center.x, center.y);
+//    CGContextAddArc(ctx, center.x, center.y, radius, startAngle,endAngle, 0);
     CGContextClosePath(ctx);
     CGContextDrawPath(ctx, kCGPathEOFillStroke);
 }
@@ -444,7 +467,7 @@
     //要显示的文字
     NSString *str = @"这是要现实的文本Text。。。。";
     //绘制文字显示的指定区域
-    CGRect rect = CGRectMake(20, 50, 374, 500);
+    CGRect rect1 = CGRectMake(20, 50, 374, 500);
     //字体大小
     UIFont *font = [UIFont systemFontOfSize:25];
     //字体颜色
@@ -455,9 +478,9 @@
     NSTextAlignment textAlignment = NSTextAlignmentCenter;
     //设置段落样式
     paragraphStyle.alignment = textAlignment;
-    NSDictionary *attributes= @{NSFontAttributeName:font,NSForegroundColorAttributeName:color,
-                                NSParagraphStyleAttributeName:style};
-    [str drawInRect:rect withAttributes:attributes];
+//    NSDictionary *attributes= @{NSFontAttributeName:font,NSForegroundColorAttributeName:color,
+//                                NSParagraphStyleAttributeName:style};
+//    [str drawInRect:rect withAttributes:attributes];
 }
 
 //绘制图片&&图片剪切CGContextClip
@@ -494,28 +517,28 @@
      6、保存
      */
     //1、获得一个图片的画布
-    UIGraphicsBeginImageContext(self.frame.size);
+//    UIGraphicsBeginImageContext(self.frame.size);
     //2、获得一个上下文
-    [self addRound];
+//    [self addRound];
     //3、设置参数
     /*
      CGSize size:截图尺寸
      BOOL opaque：是否不透明,YES不透明
      CGFloat scale：比例
      */
-    UIGraphicsBeginImageContextWithOptions(self.frame.size, YES, 1);
+//    UIGraphicsBeginImageContextWithOptions(self.frame.size, YES, 1);
     //4、开始截图
-    UIImage image = UIGraphicsGetImageFromCurrentImageContext();
+//    UIImage image = UIGraphicsGetImageFromCurrentImageContext();
     //5、关闭图片上下文
     UIGraphicsEndImageContext();
     //保存到相册
-    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:),nil);
+//    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:),nil);
 }
 //保存到相册时的回调方法
-- (void)image:(UIImage* )image didFinishSavingWithError:(NSError *)error
-  contextInfo:(void )contextInfo{
-    
-}
+//- (void)image:(UIImage* )image didFinishSavingWithError:(NSError *)error
+//  contextInfo:(void )contextInfo{
+//
+//}
 
 
 

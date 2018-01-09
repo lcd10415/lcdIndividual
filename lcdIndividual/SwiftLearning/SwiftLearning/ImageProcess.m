@@ -81,7 +81,7 @@
 -(void)setupImageCorner{
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.header.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:self.header.bounds.size];
     
-    CAShapeLayer *maskLayer = [[CAShapeLayer alloc]init];
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
     //设置大小
     maskLayer.frame = self.header.bounds;
     //设置图形样子
@@ -89,6 +89,7 @@
     self.header.layer.mask = maskLayer;
     [self addSubview:self.header];
 }
+
 
 
 @end
