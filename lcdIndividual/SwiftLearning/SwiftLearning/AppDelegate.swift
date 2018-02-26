@@ -16,15 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        let vc = ViewController()
+        let vc = TableViewFitHeight()
         
-//        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
 //        let vc = UIStoryboard(name: "Storyboard", bundle: nil).instantiateViewController(withIdentifier: "Relaxation") as? Relaxation
 //        Dream.psychosexualityFriend("xxx",50,"xxxx")
-//        self.window!.rootViewController = vc
-//        self.window!.makeKeyAndVisible()
-//        let bridge = BridgeOC()
-//
+        self.window!.rootViewController = vc
+        self.window!.makeKeyAndVisible()
+        
 //        print("\(bridge)")
         return true
     }

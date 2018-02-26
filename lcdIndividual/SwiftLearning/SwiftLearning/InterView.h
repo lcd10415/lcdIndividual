@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface InterView : NSObject
+extern NSString * const InterConstant;
 - (instancetype)initWithName:(NSString *)name Uid:(NSInteger)uid;
 @end

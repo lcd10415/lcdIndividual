@@ -9,6 +9,13 @@
 #import "RunTime.h"
 #import "Lock.h"
 #import <objc/message.h>
+#import <objc/runtime.h>
+#import <UIKit/UIKit.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+
+@interface RunTime()
+@property (nonatomic,weak)UIViewController * currentVC;
+@end
 
 @implementation RunTime
 
@@ -21,9 +28,22 @@
     return self;
 }
 
+//利用runtime实现属性的get set方法
+-(void)setCurrentVC:(UIViewController *)currentVC{
+    objc_setAssociatedObject(self, @selector(currentVC), currentVC, OBJC_ASSOCIATION_ASSIGN);
+}
+-(UIViewController *)currentVC{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+//保存gif图到相册，直接把APNG,GIF写入相册
 - (void)setup{
-    
-    
+    ALAssetsLibrary * lib = [[ALAssetsLibrary alloc]init];
+    NSString * path = [[NSBundle mainBundle] pathForResource:@"" ofType:nil];
+    NSData * data = [NSData dataWithContentsOfFile:path];
+    [lib writeImageDataToSavedPhotosAlbum:data metadata:nil completionBlock:^(NSURL *assetURL, NSError *error) {
+        
+    }];
 }
 /*
 Runtime
@@ -78,12 +98,12 @@ Runtime
         id value = aDictionary[key];
         /*判断当前属性是不是Model*/
         objc_property_t property = class_getProperty(self, key.UTF8String);
-        unsigned int outCount = 0;
+        unsigned int    outCount    = 0;
         objc_property_attribute_t *attributeList = property_copyAttributeList(property, &outCount);
-        objc_property_attribute_t attribute = attributeList[0];
+        objc_property_attribute_t  attribute      = attributeList[0];
         NSString *typeString = [NSString stringWithUTF8String:attribute.value];
         if ([typeString isEqualToString:@"@\"TestModel\""]) {
-            value = [self objectWithKeyValues:value];
+                    value    = [self objectWithKeyValues:value];
         }
         /**********************/
         //生成setter方法，并用objc_msgSend调用

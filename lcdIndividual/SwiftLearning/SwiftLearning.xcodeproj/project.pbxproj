@@ -22,9 +22,12 @@
 		9A464E511F063BC700482C2F /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A464E481F063BC700482C2F /* 7.png */; };
 		9A464E521F063BC700482C2F /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A464E491F063BC700482C2F /* 8.png */; };
 		9A4B3B641F98885800FB7DF6 /* TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B3B631F98885800FB7DF6 /* TransitionAnimation.m */; };
+		9A4EEB47204141FA00E454E5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4EEB46204141FA00E454E5 /* AssetsLibrary.framework */; };
 		9A52E9621F41DE0100C10818 /* TypeFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52E9611F41DE0100C10818 /* TypeFirst.swift */; };
 		9A59B6FF1F9D9E820074B349 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A59B6FE1F9D9E820074B349 /* MapView.m */; };
 		9A60A16E1FD8DE6500EFE69A /* Lock.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A60A16D1FD8DE6500EFE69A /* Lock.m */; };
+		9A621090202C29DB005A8DED /* UIBezierPath+DrawPentagon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A62108F202C29DB005A8DED /* UIBezierPath+DrawPentagon.m */; };
+		9A6388522011F1C3000655B4 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6388512011F1C3000655B4 /* CircleView.swift */; };
 		9A6401C11FB9779700B03C7A /* RunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6401C01FB9779700B03C7A /* RunTime.m */; };
 		9A6401C41FB98A8000B03C7A /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6401C31FB98A8000B03C7A /* Block.m */; };
 		9A7266A120030AC700B54426 /* InterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7266A020030AC700B54426 /* InterView.m */; };
@@ -32,8 +35,11 @@
 		9A8441941FE0CE18000562E3 /* DBTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8441931FE0CE18000562E3 /* DBTest.m */; };
 		9A8446181FE10238000562E3 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8446171FE10238000562E3 /* Student.m */; };
 		9A84461B1FE13748000562E3 /* Knoweledge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84461A1FE13748000562E3 /* Knoweledge.m */; };
-		9AABC2272000B47100572C8D /* ErrorHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AABC2262000B47100572C8D /* ErrorHandle.swift */; };
+		9A91BAE7203FEBCA00A929B9 /* TableViewFitHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91BAE6203FEBCA00A929B9 /* TableViewFitHeight.swift */; };
 		9ACBA6111F4FF1440055052A /* Relaxation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBA6101F4FF1440055052A /* Relaxation.swift */; };
+		9ACDF9342015826300FF7895 /* String+StringHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACDF9332015826300FF7895 /* String+StringHeight.swift */; };
+		9ACDF93720158FA100FF7895 /* UIApplication+CurrentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACDF93620158FA100FF7895 /* UIApplication+CurrentVC.m */; };
+		9ACE10BD2010808F000DA7D5 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE10BC2010808F000DA7D5 /* Dispatch.swift */; };
 		9ACE9AD2200473A200DB49A6 /* EffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE9AD1200473A200DB49A6 /* EffectView.m */; };
 		9ACE9AD42004B2F000DB49A6 /* NewFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE9AD32004B2F000DB49A6 /* NewFeature.swift */; };
 		9AD677AA1FA6F5BE005756AA /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD677A91FA6F5BE005756AA /* AnimationViewController.m */; };
@@ -68,11 +74,15 @@
 		9A464E491F063BC700482C2F /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
 		9A4B3B621F98885800FB7DF6 /* TransitionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionAnimation.h; sourceTree = "<group>"; };
 		9A4B3B631F98885800FB7DF6 /* TransitionAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimation.m; sourceTree = "<group>"; };
+		9A4EEB46204141FA00E454E5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		9A52E9611F41DE0100C10818 /* TypeFirst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeFirst.swift; sourceTree = "<group>"; };
 		9A59B6FD1F9D9E820074B349 /* MapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		9A59B6FE1F9D9E820074B349 /* MapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
 		9A60A16C1FD8DE6500EFE69A /* Lock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lock.h; sourceTree = "<group>"; };
 		9A60A16D1FD8DE6500EFE69A /* Lock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lock.m; sourceTree = "<group>"; };
+		9A62108E202C29DB005A8DED /* UIBezierPath+DrawPentagon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+DrawPentagon.h"; sourceTree = "<group>"; };
+		9A62108F202C29DB005A8DED /* UIBezierPath+DrawPentagon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+DrawPentagon.m"; sourceTree = "<group>"; };
+		9A6388512011F1C3000655B4 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		9A6401BF1FB9779700B03C7A /* RunTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTime.h; sourceTree = "<group>"; };
 		9A6401C01FB9779700B03C7A /* RunTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTime.m; sourceTree = "<group>"; };
 		9A6401C21FB98A8000B03C7A /* Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
@@ -88,8 +98,12 @@
 		9A8446171FE10238000562E3 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		9A8446191FE13748000562E3 /* Knoweledge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Knoweledge.h; sourceTree = "<group>"; };
 		9A84461A1FE13748000562E3 /* Knoweledge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Knoweledge.m; sourceTree = "<group>"; };
-		9AABC2262000B47100572C8D /* ErrorHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ErrorHandle.swift; path = /Users/a1/Desktop/practise/lcdIndividual/SwiftLearning/ErrorHandle.swift; sourceTree = "<absolute>"; };
+		9A91BAE6203FEBCA00A929B9 /* TableViewFitHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewFitHeight.swift; path = /Users/a1/Desktop/temp/lcdIndividual/lcdIndividual/SwiftLearning/TableViewFitHeight.swift; sourceTree = "<absolute>"; };
 		9ACBA6101F4FF1440055052A /* Relaxation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relaxation.swift; sourceTree = "<group>"; };
+		9ACDF9332015826300FF7895 /* String+StringHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+StringHeight.swift"; sourceTree = "<group>"; };
+		9ACDF93520158FA100FF7895 /* UIApplication+CurrentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+CurrentVC.h"; sourceTree = "<group>"; };
+		9ACDF93620158FA100FF7895 /* UIApplication+CurrentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+CurrentVC.m"; sourceTree = "<group>"; };
+		9ACE10BC2010808F000DA7D5 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		9ACE9AD0200473A200DB49A6 /* EffectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectView.h; sourceTree = "<group>"; };
 		9ACE9AD1200473A200DB49A6 /* EffectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectView.m; sourceTree = "<group>"; };
 		9ACE9AD32004B2F000DB49A6 /* NewFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeature.swift; sourceTree = "<group>"; };
@@ -122,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A4EEB47204141FA00E454E5 /* AssetsLibrary.framework in Frameworks */,
 				9AE79FB61FE27054003D366A /* Contacts.framework in Frameworks */,
 				67F400F0A2B4B175F13E7904 /* Pods_SwiftLearning.framework in Frameworks */,
 			);
@@ -133,6 +148,7 @@
 		9A84418D1FE0CB0F000562E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A4EEB46204141FA00E454E5 /* AssetsLibrary.framework */,
 				9AE79FB51FE27048003D366A /* Contacts.framework */,
 				9A84418E1FE0CB0F000562E3 /* libsqlite3.0.tbd */,
 				F1A3AA8A30C23A8FAEB2B0A4 /* Pods_SwiftLearning.framework */,
@@ -143,7 +159,7 @@
 		9AF7109F1F04E6320029135E = {
 			isa = PBXGroup;
 			children = (
-				9AABC2262000B47100572C8D /* ErrorHandle.swift */,
+				9A91BAE6203FEBCA00A929B9 /* TableViewFitHeight.swift */,
 				9A6401C21FB98A8000B03C7A /* Block.h */,
 				9A6401C31FB98A8000B03C7A /* Block.m */,
 				9AF5372C1F5E49F7004DD7D1 /* Header.h */,
@@ -181,10 +197,15 @@
 				9A4B3B631F98885800FB7DF6 /* TransitionAnimation.m */,
 				9A72669F20030AC700B54426 /* InterView.h */,
 				9A7266A020030AC700B54426 /* InterView.m */,
+				9ACE10BC2010808F000DA7D5 /* Dispatch.swift */,
 				9AF710AB1F04E6320029135E /* AppDelegate.swift */,
+				9A6388512011F1C3000655B4 /* CircleView.swift */,
+				9ACDF9332015826300FF7895 /* String+StringHeight.swift */,
 				9A06CF1C1F4FB79B000AC087 /* View.xib */,
 				9A59B6FD1F9D9E820074B349 /* MapView.h */,
 				9A59B6FE1F9D9E820074B349 /* MapView.m */,
+				9A62108E202C29DB005A8DED /* UIBezierPath+DrawPentagon.h */,
+				9A62108F202C29DB005A8DED /* UIBezierPath+DrawPentagon.m */,
 				9A06CF1E1F4FC8CE000AC087 /* Storyboard.storyboard */,
 				9AF710AD1F04E6320029135E /* ViewController.swift */,
 				9ACBA6101F4FF1440055052A /* Relaxation.swift */,
@@ -210,6 +231,8 @@
 				9AF537281F5E4854004DD7D1 /* BridgeOC.m */,
 				9A6401BF1FB9779700B03C7A /* RunTime.h */,
 				9A6401C01FB9779700B03C7A /* RunTime.m */,
+				9ACDF93520158FA100FF7895 /* UIApplication+CurrentVC.h */,
+				9ACDF93620158FA100FF7895 /* UIApplication+CurrentVC.m */,
 				9AF076901F189BC00075A9B4 /* Singleton.swift */,
 				9AF710BD1F04EF330029135E /* TimeShaft.swift */,
 				9AF710AF1F04E6320029135E /* Main.storyboard */,
@@ -266,7 +289,7 @@
 				TargetAttributes = {
 					9AF710A71F04E6320029135E = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = KY976W2GUP;
+						DevelopmentTeam = NUDB2357C9;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -341,10 +364,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A621090202C29DB005A8DED /* UIBezierPath+DrawPentagon.m in Sources */,
 				9AF710BE1F04EF330029135E /* TimeShaft.swift in Sources */,
 				9AD677AA1FA6F5BE005756AA /* AnimationViewController.m in Sources */,
 				9AF076911F189BC00075A9B4 /* Singleton.swift in Sources */,
@@ -382,21 +408,25 @@
 				9ACBA6111F4FF1440055052A /* Relaxation.swift in Sources */,
 				9A6401C41FB98A8000B03C7A /* Block.m in Sources */,
 				9ADB3BCC1FEB907400290FAD /* DropAndDrag.m in Sources */,
+				9A6388522011F1C3000655B4 /* CircleView.swift in Sources */,
 				9A8441941FE0CE18000562E3 /* DBTest.m in Sources */,
 				9AF537291F5E4854004DD7D1 /* BridgeOC.m in Sources */,
+				9A91BAE7203FEBCA00A929B9 /* TableViewFitHeight.swift in Sources */,
 				9A60A16E1FD8DE6500EFE69A /* Lock.m in Sources */,
 				9A4B3B641F98885800FB7DF6 /* TransitionAnimation.m in Sources */,
 				9A6401C11FB9779700B03C7A /* RunTime.m in Sources */,
 				9A84461B1FE13748000562E3 /* Knoweledge.m in Sources */,
 				9AE79DA61FE2211D003D366A /* Subscript.swift in Sources */,
 				9ACE9AD2200473A200DB49A6 /* EffectView.m in Sources */,
+				9ACDF93720158FA100FF7895 /* UIApplication+CurrentVC.m in Sources */,
+				9ACDF9342015826300FF7895 /* String+StringHeight.swift in Sources */,
 				9A7B2F9B1F9F123000F76CE1 /* ImageProcess.m in Sources */,
-				9AABC2272000B47100572C8D /* ErrorHandle.swift in Sources */,
 				9A7266A120030AC700B54426 /* InterView.m in Sources */,
 				9AF5372F1F5EAC1D004DD7D1 /* Arithmetic.m in Sources */,
 				9AF710AE1F04E6320029135E /* ViewController.swift in Sources */,
 				9AF710AC1F04E6320029135E /* AppDelegate.swift in Sources */,
 				9ACE9AD42004B2F000DB49A6 /* NewFeature.swift in Sources */,
+				9ACE10BD2010808F000DA7D5 /* Dispatch.swift in Sources */,
 				9A52E9621F41DE0100C10818 /* TypeFirst.swift in Sources */,
 				9A8446181FE10238000562E3 /* Student.m in Sources */,
 			);
@@ -524,8 +554,9 @@
 			baseConfigurationReference = 8D697121AAAFD7B8C42E15DC /* Pods-SwiftLearning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = KY976W2GUP;
+				DEVELOPMENT_TEAM = NUDB2357C9;
 				INFOPLIST_FILE = SwiftLearning/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -542,8 +573,9 @@
 			baseConfigurationReference = BD1AA4655B42B9598F4D0DDD /* Pods-SwiftLearning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = KY976W2GUP;
+				DEVELOPMENT_TEAM = NUDB2357C9;
 				INFOPLIST_FILE = SwiftLearning/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

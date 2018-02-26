@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Block : NSObject
-
+- (void)method1;
+- (void)method2;
 @end

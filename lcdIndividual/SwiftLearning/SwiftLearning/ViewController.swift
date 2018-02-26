@@ -9,6 +9,7 @@
 import UIKit
 import AdSupport
 import Photos
+import Alamofire
 
 class PB: UIViewController {
     
@@ -125,10 +126,30 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate{
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        let db = DBTest()
+//        let db = DBTest()
         
+//        let vc = UIViewController()
+//        if #available(iOS 11.0, *) {
+//            vc.navigationItem.largeTitleDisplayMode = .always
+//        } else {
+//            // Fallback on earlier versions
+//        }
         
-        
+//        Alamofire.request("https://www.baidu.com").validate(statusCode: 200..<300).validate(contentType: ["text/html"]).responseData { (response) in
+//            switch response.result{
+//                case .success:
+//                    print("successful")
+//                case .failure(let error):
+//                print(error)
+//            }
+//        }
+        //Accept-Encoding 表示可接受的编码方式
+//        Alamofire.download("https://httpbin.org/image/png").response { (response) in
+//            print(response)
+//
+//        }
+        let tab = TableViewFitHeight()
+    
         
     }
 

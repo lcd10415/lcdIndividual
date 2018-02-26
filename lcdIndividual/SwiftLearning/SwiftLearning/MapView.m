@@ -30,7 +30,6 @@
 }
 
 - (void)setupUI{
-    
     self.backgroundColor = [UIColor grayColor];
     [self addSubview:self.btnFirst];
     [self addSubview:self.btnSecond];

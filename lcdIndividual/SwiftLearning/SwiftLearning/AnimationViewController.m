@@ -68,10 +68,10 @@
 //KCATransitionMoveIn 移动到旧视图
 -(void)addTransitionAnimation{
     CATransition * transition = [CATransition animation];
-    transition.startProgress = 0;
-    transition.endProgress = 1.0;
-    transition.type = kCATransitionFade;//
-    transition.subtype = kCATransitionFromRight;
+    transition.startProgress  = 0;
+    transition.endProgress    = 1.0;
+    transition.type     = kCATransitionFade;//
+    transition.subtype  = kCATransitionFromRight;
     transition.duration = 1.0;
 
     [self.view.layer addAnimation:transition forKey:@"transition"];
@@ -86,7 +86,7 @@
     //组动画
     CAAnimationGroup * group = [CAAnimationGroup animation];
     CAKeyframeAnimation * key = [self createKeyAnimation:self.view.layer];
-    CABasicAnimation * basic = [self createRotate:self.view.layer];
+    CABasicAnimation * basic  = [self createRotate:self.view.layer];
     group.animations = @[key,basic];
     [layer addAnimation:group forKey:@"GROUP"];
     
@@ -177,6 +177,7 @@
     UIGraphicsEndImageContext();
     [self.view addSubview:imgV];
 }
+
 //粒子动画CAEmitterLayer
 /*
  emitterCells:NSArray<CAEmitterCell*>粒子单元组
@@ -381,6 +382,7 @@
     CGContextAddRect(ctx, CGRectMake(2, 2, 30, 30));
     CGContextStrokePath(ctx);
 }
+
 
 /**
  *  画圆

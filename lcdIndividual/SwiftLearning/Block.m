@@ -72,10 +72,16 @@ void(^SomeBlock)(NSString * name);
 
 -(void)test{
     Block * __weak weakSelf = self;
+    __weak __typeof__(self) weakSelf1 = self;
     self.block = ^{
         [weakSelf setup]; //capture the weak reference to avoid the reference cycle
+        [weakSelf1 setup];
     };
 }
+- (void)testGCD{
+    
+}
+
 
 //OS X和iOS 提供多种高并发性，两种任务调度机制：操作队列和中央调度
 //GCD在调度队列调度块
@@ -112,7 +118,13 @@ void(^SomeBlock)(NSString * name);
     
 }
 
+- (void)method1{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
 
+-(void)method2{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
 
 
 
