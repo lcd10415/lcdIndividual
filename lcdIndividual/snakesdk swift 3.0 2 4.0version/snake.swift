@@ -185,7 +185,7 @@ public class Snake {
             verifyCode: verifyCode.trim(),
             phone:      context.phone!.trim() )
         
-        _loginOrRegisterHelper( url: http.RegisterURL,
+        _loginOrRegisterHelper(url: http.RegisterURL,
             params:      params,
             transparent: context.transparent)
     }

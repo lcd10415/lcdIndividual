@@ -853,7 +853,7 @@
 					};
 					952984391D20CE1C00CE4092 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = KY976W2GUP;
+						DevelopmentTeam = NUDB2357C9;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
@@ -1159,7 +1159,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KY976W2GUP;
+				DEVELOPMENT_TEAM = NUDB2357C9;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				EXECUTABLE_PREFIX = "";
@@ -1303,7 +1303,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: ting wang (63G5MJF27S)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KY976W2GUP;
+				DEVELOPMENT_TEAM = NUDB2357C9;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				EXECUTABLE_PREFIX = "";
@@ -1347,7 +1347,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KY976W2GUP;
+				DEVELOPMENT_TEAM = NUDB2357C9;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				EXECUTABLE_PREFIX = "";

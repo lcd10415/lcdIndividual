@@ -16,7 +16,7 @@ typealias AccountSwitchHandler = ()->Void
 
 /*支付成功、失败回调*/
 typealias PaySuccessHandler = (_ transparent: AnyObject?)->Void
-typealias PayFailedHandler = (_ error: String, _ transparent: AnyObject?)->Void
+typealias PayFailedHandler  = (_ error: String, _ transparent: AnyObject?)->Void
 
 //退出回调
 typealias ExitHandler = ()->Void
@@ -80,7 +80,7 @@ public struct PayCallback {
     //构造器
     init( onSuccess :@escaping PaySuccessHandler = {_ in }, onFailed :@escaping PayFailedHandler = {_,_  in }) {
         _onSuccess = onSuccess
-        _onFailed = onFailed
+        _onFailed  = onFailed
     }
     
 }

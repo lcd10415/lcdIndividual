@@ -134,7 +134,7 @@ Runtime
  在OOP术语中，消息传递是指一种在对象之间发送和接收消息的通信模式。 在Objective-C中，消息传递用于在调用类和类实例的方法，即接收者接收需要执行的消息
  
  1.消息机制 objc_msgSend(target,@selector(doSomething))
- 2.获取对象的所有属性，方法，成员变量，和遵循的协议和添加属性、方法等  ivar表示成员变量 class_addIvar class_addMethod class_addProperty class_addProtocol
+ 2.获取对象的所有属性，方法，成员变量，和遵循的协议和添加属性、方法等  ivar表示成员变量 class_addIvar class_addMethod class_addProperty class_copyProtocolList 获取协议列表
     class_copyPropertyList  获取属性列表
     class_copyMethodList    获取方法列表
     class_copyIvarList      获取成员变量列表
