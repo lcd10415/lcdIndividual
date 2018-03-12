@@ -14,7 +14,11 @@ class ViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel = LCDViewModel()
+        self.tableView.rowHeight = UITableViewAutomaticDimension;
+        self.tableView.estimatedRowHeight = 70
         self.tableView.tableHeaderView = LCDHeaderView(frame: CGRect(x:0,y:0,width:self.view.frame.size.width,height:100))
+        self.tableView.mj_header = MJRefreshNormalHeader.init(refreshingTarget: self, refreshingAction: #selector(headerRefresh))
+        self.tableView.mj_footer = MJRefreshAutoNormalFooter.init(refreshingTarget: self, refreshingAction: #selector(footerRefresh))
         
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -43,7 +47,28 @@ class ViewController: UITableViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @objc func headerRefresh(){
+        print("下拉刷新")
+        let arr = [["image": "7","title":"醉玲珑","subTitle":"玩玩"],
+                   ["image": "5","title":"大哥大","subTitle":"犯困"],
+                   ["image": "4","title":"小姐姐","subTitle":"喜欢"],
+                   ["image": "3","title":"荒野行动","subTitle":"沉迷"],
+                   ["image": "5","title":"绝地求生","subTitle":"热爱"],
+                   ["image": "6","title":"英雄联盟","subTitle":"痴迷"],
+                   ["image": "7","title":"DNF","subTitle":"讨厌"],]
+        
+        for (_,value) in arr.enumerated() {
+            var temp:[LCDCellModel] = []
+            temp.append(LCDCellModel.init(dict: value))
+            self.viewModel.LCDInfo.append(temp)
+        }
+        self.tableView.reloadData()
+        self.tableView.mj_header.endRefreshing()
+    }
+    @objc func footerRefresh(){
+        print("尾部视图")
+        self.tableView.mj_footer.endRefreshing()
+    }
 
 }
 

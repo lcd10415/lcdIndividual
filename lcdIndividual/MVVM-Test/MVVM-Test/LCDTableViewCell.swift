@@ -18,13 +18,17 @@ class LCDTableViewCell: UITableViewCell {
         self.contentView.addSubview(imageView)
         self.imgView = imageView
         
-        let lab = UILabel(frame: CGRect(x:imageView.frame.maxX+10,y:15,width:200,height:20))
-        lab.font = UIFont.systemFont(ofSize: 20.0)
+        let lab = UILabel(frame: CGRect(x:imageView.frame.maxX+10,y:15,width:self.bounds.width,height:20))
+        lab.font = UIFont.systemFont(ofSize: 18.0)
         self.contentView.addSubview(lab)
         self.lab = lab
         
-        let subLab = UILabel(frame:CGRect(x:imageView.frame.maxX+10,y:40,width:200,height:13))
+        let subLab = UILabel(frame:CGRect(x:imageView.frame.maxX+10,y:40,width:self.bounds.width,height:13))
         subLab.font = UIFont.systemFont(ofSize: 13)
+        subLab.numberOfLines = 0;
+//        subLab.sizeToFit()
+//        let size = subLab.sizeThatFits(CGSize(width:self.bounds.width,height:CGFloat(MAXFLOAT)))
+//        subLab.frame = CGRect(x:imageView.frame.maxX+10,y:40,width:size.width,height:size.height)
         self.contentView.addSubview(subLab)
         self.subLab = subLab
     }

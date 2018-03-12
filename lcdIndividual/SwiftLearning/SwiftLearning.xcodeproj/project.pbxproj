@@ -36,6 +36,8 @@
 		9A8446181FE10238000562E3 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8446171FE10238000562E3 /* Student.m */; };
 		9A84461B1FE13748000562E3 /* Knoweledge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84461A1FE13748000562E3 /* Knoweledge.m */; };
 		9A91BAE7203FEBCA00A929B9 /* TableViewFitHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91BAE6203FEBCA00A929B9 /* TableViewFitHeight.swift */; };
+		9AA584B120513CB60075FC06 /* FileHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA584B020513CB60075FC06 /* FileHandler.m */; };
+		9AA584B42051421D0075FC06 /* SingleFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA584B32051421D0075FC06 /* SingleFile.m */; };
 		9ACBA6111F4FF1440055052A /* Relaxation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBA6101F4FF1440055052A /* Relaxation.swift */; };
 		9ACDF9342015826300FF7895 /* String+StringHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACDF9332015826300FF7895 /* String+StringHeight.swift */; };
 		9ACDF93720158FA100FF7895 /* UIApplication+CurrentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACDF93620158FA100FF7895 /* UIApplication+CurrentVC.m */; };
@@ -99,6 +101,10 @@
 		9A8446191FE13748000562E3 /* Knoweledge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Knoweledge.h; sourceTree = "<group>"; };
 		9A84461A1FE13748000562E3 /* Knoweledge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Knoweledge.m; sourceTree = "<group>"; };
 		9A91BAE6203FEBCA00A929B9 /* TableViewFitHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewFitHeight.swift; path = /Users/a1/Desktop/temp/lcdIndividual/lcdIndividual/SwiftLearning/TableViewFitHeight.swift; sourceTree = "<absolute>"; };
+		9AA584AF20513CB60075FC06 /* FileHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileHandler.h; sourceTree = "<group>"; };
+		9AA584B020513CB60075FC06 /* FileHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileHandler.m; sourceTree = "<group>"; };
+		9AA584B22051421D0075FC06 /* SingleFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleFile.h; sourceTree = "<group>"; };
+		9AA584B32051421D0075FC06 /* SingleFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleFile.m; sourceTree = "<group>"; };
 		9ACBA6101F4FF1440055052A /* Relaxation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relaxation.swift; sourceTree = "<group>"; };
 		9ACDF9332015826300FF7895 /* String+StringHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+StringHeight.swift"; sourceTree = "<group>"; };
 		9ACDF93520158FA100FF7895 /* UIApplication+CurrentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+CurrentVC.h"; sourceTree = "<group>"; };
@@ -231,6 +237,10 @@
 				9AF537281F5E4854004DD7D1 /* BridgeOC.m */,
 				9A6401BF1FB9779700B03C7A /* RunTime.h */,
 				9A6401C01FB9779700B03C7A /* RunTime.m */,
+				9AA584AF20513CB60075FC06 /* FileHandler.h */,
+				9AA584B020513CB60075FC06 /* FileHandler.m */,
+				9AA584B22051421D0075FC06 /* SingleFile.h */,
+				9AA584B32051421D0075FC06 /* SingleFile.m */,
 				9ACDF93520158FA100FF7895 /* UIApplication+CurrentVC.h */,
 				9ACDF93620158FA100FF7895 /* UIApplication+CurrentVC.m */,
 				9AF076901F189BC00075A9B4 /* Singleton.swift */,
@@ -367,18 +377,22 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AsyncDisplayKit/AsyncDisplayKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SGPagingView/SGPagingView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SGPagingView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -416,8 +430,10 @@
 				9ACBA6111F4FF1440055052A /* Relaxation.swift in Sources */,
 				9A6401C41FB98A8000B03C7A /* Block.m in Sources */,
 				9ADB3BCC1FEB907400290FAD /* DropAndDrag.m in Sources */,
+				9AA584B42051421D0075FC06 /* SingleFile.m in Sources */,
 				9A6388522011F1C3000655B4 /* CircleView.swift in Sources */,
 				9A8441941FE0CE18000562E3 /* DBTest.m in Sources */,
+				9AA584B120513CB60075FC06 /* FileHandler.m in Sources */,
 				9AF537291F5E4854004DD7D1 /* BridgeOC.m in Sources */,
 				9A91BAE7203FEBCA00A929B9 /* TableViewFitHeight.swift in Sources */,
 				9A60A16E1FD8DE6500EFE69A /* Lock.m in Sources */,

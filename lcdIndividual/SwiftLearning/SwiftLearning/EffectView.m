@@ -38,6 +38,7 @@
     visualEffect.alpha = 1;
     [self.blurImageView addSubview:visualEffect];
     [visualEffect.contentView addSubview:self.backLab];
+    [self.backLab.text boundingRectWithSize:CGSizeZero options:NSStringDrawingUsesDeviceMetrics attributes:@{} context:nil];
 }
 
 -(UIImageView *)blurImageView{

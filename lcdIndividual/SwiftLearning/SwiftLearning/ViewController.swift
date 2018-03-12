@@ -149,7 +149,16 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate{
 //
 //        }
         let tab = TableViewFitHeight()
-    
+        let subLab = UILabel()
+        subLab.numberOfLines = 0;
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineBreakMode = .byCharWrapping
+        let dict  = [NSAttributedStringKey.font:self.subLab.font,NSAttributedStringKey.paragraphStyle:paragraphStyle] as [NSAttributedStringKey : Any]
+        let rect = self.subLab.text?.boundingRect(with: self.subLab.bounds.size, options: .usesLineFragmentOrigin, attributes: dict, context: nil)
+        subLab.frame = CGRect(x:0,y:40,width:(rect?.width)!,height:(rect?.height)!)
+        subLab.font = UIFont.systemFont(ofSize: 13)
+        
+        self.view.addSubview(subLab)
         
     }
 

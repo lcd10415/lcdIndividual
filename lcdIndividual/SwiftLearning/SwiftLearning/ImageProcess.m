@@ -89,6 +89,72 @@
     self.header.layer.mask = maskLayer;
     [self addSubview:self.header];
 }
+//图片大小裁剪
+- (NSData *)imageWithImage: (UIImage *)image scaledToSize: (CGSize)newSize{
+    UIGraphicsBeginImageContext(newSize);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage * newImg = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    NSData * data = UIImageJPEGRepresentation(newImg, 0.8);
+    return  data;
+}
+//图片读取
++ (UIImage *)imageNamed:(NSString *)name inBundleName:(NSString *)bundleName{
+    NSBundle * bundle = [NSBundle mainBundle];
+    NSURL * url = [bundle URLForResource:bundleName withExtension:@"bundle"];
+    if (!url) {
+        return nil;
+    }
+    NSBundle * imageBundle = [NSBundle bundleWithURL:url];
+    NSString * path = [imageBundle pathForResource:name ofType:@"png"];
+    if ([path isEqual:@""]) {
+        //将图片加载到缓存，正在屏幕中显示的图片不会被内存回收。
+        return [UIImage imageNamed:name];
+    }
+    //指定路径加载图片，不进行缓存
+    return [UIImage imageWithContentsOfFile:path];
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
