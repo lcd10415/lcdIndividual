@@ -27,6 +27,10 @@ class TableViewFitHeight: UITableViewController {
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell");
         var array: [Int] = [1,23,2,33,43,22,11,100,99,0,20]
         
+        //iOS11， UITableView、UICollectionView、UIScrollView的contentInsetAdjustmentBehavior = .never
+        if #available(iOS 11.0, *) {
+            self.tableView.contentInsetAdjustmentBehavior = .never;
+        }
         print(knowledge().insertSort(arr: &array));
         
     }
