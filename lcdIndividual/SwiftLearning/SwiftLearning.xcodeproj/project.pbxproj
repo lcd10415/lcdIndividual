@@ -11,7 +11,6 @@
 		9A06CF1D1F4FB79B000AC087 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A06CF1C1F4FB79B000AC087 /* View.xib */; };
 		9A06CF1F1F4FC8CE000AC087 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A06CF1E1F4FC8CE000AC087 /* Storyboard.storyboard */; };
 		9A0B51AA1F4FF5380085A4F0 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A0B51A91F4FF5380085A4F0 /* Data.plist */; };
-		9A0B54391F53FDAF0085A4F0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B54381F53FDAF0085A4F0 /* File.swift */; };
 		9A464E4A1F063BC700482C2F /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A464E411F063BC700482C2F /* 0.png */; };
 		9A464E4B1F063BC700482C2F /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A464E421F063BC700482C2F /* 1.png */; };
 		9A464E4C1F063BC700482C2F /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A464E431F063BC700482C2F /* 2.png */; };
@@ -31,6 +30,7 @@
 		9A6401C11FB9779700B03C7A /* RunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6401C01FB9779700B03C7A /* RunTime.m */; };
 		9A6401C41FB98A8000B03C7A /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6401C31FB98A8000B03C7A /* Block.m */; };
 		9A7266A120030AC700B54426 /* InterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7266A020030AC700B54426 /* InterView.m */; };
+		9A7802002057BB3000FD1252 /* NestedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7801FF2057BB2F00FD1252 /* NestedTypes.swift */; };
 		9A7B2F9B1F9F123000F76CE1 /* ImageProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7B2F9A1F9F123000F76CE1 /* ImageProcess.m */; };
 		9A8441941FE0CE18000562E3 /* DBTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8441931FE0CE18000562E3 /* DBTest.m */; };
 		9A8446181FE10238000562E3 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8446171FE10238000562E3 /* Student.m */; };
@@ -48,6 +48,7 @@
 		9ADB3BCC1FEB907400290FAD /* DropAndDrag.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB3BCB1FEB907400290FAD /* DropAndDrag.m */; };
 		9AE79DA61FE2211D003D366A /* Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE79DA51FE2211D003D366A /* Subscript.swift */; };
 		9AE79FB61FE27054003D366A /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE79FB51FE27048003D366A /* Contacts.framework */; };
+		9AEF641E2060A0B700B214D9 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF641D2060A0B700B214D9 /* Tools.m */; };
 		9AF076911F189BC00075A9B4 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF076901F189BC00075A9B4 /* Singleton.swift */; };
 		9AF537291F5E4854004DD7D1 /* BridgeOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF537281F5E4854004DD7D1 /* BridgeOC.m */; };
 		9AF5372F1F5EAC1D004DD7D1 /* Arithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF5372E1F5EAC1D004DD7D1 /* Arithmetic.m */; };
@@ -64,7 +65,6 @@
 		9A06CF1C1F4FB79B000AC087 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		9A06CF1E1F4FC8CE000AC087 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		9A0B51A91F4FF5380085A4F0 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
-		9A0B54381F53FDAF0085A4F0 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		9A464E411F063BC700482C2F /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 		9A464E421F063BC700482C2F /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		9A464E431F063BC700482C2F /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
@@ -91,6 +91,7 @@
 		9A6401C31FB98A8000B03C7A /* Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Block.m; sourceTree = "<group>"; };
 		9A72669F20030AC700B54426 /* InterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterView.h; sourceTree = "<group>"; };
 		9A7266A020030AC700B54426 /* InterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterView.m; sourceTree = "<group>"; };
+		9A7801FF2057BB2F00FD1252 /* NestedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedTypes.swift; sourceTree = "<group>"; };
 		9A7B2F991F9F123000F76CE1 /* ImageProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageProcess.h; sourceTree = "<group>"; };
 		9A7B2F9A1F9F123000F76CE1 /* ImageProcess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageProcess.m; sourceTree = "<group>"; };
 		9A84418E1FE0CB0F000562E3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
@@ -119,6 +120,8 @@
 		9ADB3BCB1FEB907400290FAD /* DropAndDrag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropAndDrag.m; sourceTree = "<group>"; };
 		9AE79DA51FE2211D003D366A /* Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscript.swift; sourceTree = "<group>"; };
 		9AE79FB51FE27048003D366A /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		9AEF641C2060A0B600B214D9 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tools.h; path = /Users/a1/Desktop/temp/lcdIndividual/lcdIndividual/SwiftLearning/Tools.h; sourceTree = "<absolute>"; };
+		9AEF641D2060A0B700B214D9 /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Tools.m; path = /Users/a1/Desktop/temp/lcdIndividual/lcdIndividual/SwiftLearning/Tools.m; sourceTree = "<absolute>"; };
 		9AF076901F189BC00075A9B4 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		9AF537271F5E4854004DD7D1 /* BridgeOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeOC.h; sourceTree = "<group>"; };
 		9AF537281F5E4854004DD7D1 /* BridgeOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeOC.m; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 		9AF7109F1F04E6320029135E = {
 			isa = PBXGroup;
 			children = (
+				9AEF641C2060A0B600B214D9 /* Tools.h */,
+				9AEF641D2060A0B700B214D9 /* Tools.m */,
 				9A91BAE6203FEBCA00A929B9 /* TableViewFitHeight.swift */,
 				9A6401C21FB98A8000B03C7A /* Block.h */,
 				9A6401C31FB98A8000B03C7A /* Block.m */,
@@ -223,6 +228,7 @@
 				9A8446171FE10238000562E3 /* Student.m */,
 				9A7B2F991F9F123000F76CE1 /* ImageProcess.h */,
 				9A7B2F9A1F9F123000F76CE1 /* ImageProcess.m */,
+				9A7801FF2057BB2F00FD1252 /* NestedTypes.swift */,
 				9ACE9AD32004B2F000DB49A6 /* NewFeature.swift */,
 				9ACE9AD0200473A200DB49A6 /* EffectView.h */,
 				9ACE9AD1200473A200DB49A6 /* EffectView.m */,
@@ -232,7 +238,6 @@
 				9A60A16D1FD8DE6500EFE69A /* Lock.m */,
 				9AD677A81FA6F5BE005756AA /* AnimationViewController.h */,
 				9AD677A91FA6F5BE005756AA /* AnimationViewController.m */,
-				9A0B54381F53FDAF0085A4F0 /* File.swift */,
 				9AF537271F5E4854004DD7D1 /* BridgeOC.h */,
 				9AF537281F5E4854004DD7D1 /* BridgeOC.m */,
 				9A6401BF1FB9779700B03C7A /* RunTime.h */,
@@ -375,24 +380,26 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AsyncDisplayKit/AsyncDisplayKit.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMRefresh/GTMRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/KissXML/KissXML.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
-				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
-				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SGPagingView/SGPagingView.framework",
+				"${BUILT_PRODUCTS_DIR}/XMPPFramework/XMPPFramework.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KissXML.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SGPagingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMPPFramework.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -426,11 +433,12 @@
 				9AD677AA1FA6F5BE005756AA /* AnimationViewController.m in Sources */,
 				9AF076911F189BC00075A9B4 /* Singleton.swift in Sources */,
 				9A59B6FF1F9D9E820074B349 /* MapView.m in Sources */,
-				9A0B54391F53FDAF0085A4F0 /* File.swift in Sources */,
+				9A7802002057BB3000FD1252 /* NestedTypes.swift in Sources */,
 				9ACBA6111F4FF1440055052A /* Relaxation.swift in Sources */,
 				9A6401C41FB98A8000B03C7A /* Block.m in Sources */,
 				9ADB3BCC1FEB907400290FAD /* DropAndDrag.m in Sources */,
 				9AA584B42051421D0075FC06 /* SingleFile.m in Sources */,
+				9AEF641E2060A0B700B214D9 /* Tools.m in Sources */,
 				9A6388522011F1C3000655B4 /* CircleView.swift in Sources */,
 				9A8441941FE0CE18000562E3 /* DBTest.m in Sources */,
 				9AA584B120513CB60075FC06 /* FileHandler.m in Sources */,
@@ -581,6 +589,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = NUDB2357C9;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SwiftLearning/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -600,6 +609,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = NUDB2357C9;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SwiftLearning/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

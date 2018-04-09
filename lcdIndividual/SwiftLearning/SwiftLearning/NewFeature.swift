@@ -33,7 +33,7 @@ struct NewFeature {
     func removeCharacters() {
         let value = "one,two,three,four,five..."
         var i = value.startIndex
-        while let comma = value[i..<value.endIndex].index(of: ",") {
+        while let comma = value[i...value.endIndex].index(of: ",") {
             if value[i..<comma] == "two"{
                 print("found it !")
             }
@@ -99,31 +99,33 @@ struct NewFeature {
         var suit:Suit
         var rank:Rank
         func reference() {
+            let s = [Card(suit: .spades,rank: .ace),Card(suit: .diamonds,rank: .two)]
             let hand = [Card(suit: .hearts,rank:.two),Card(suit:.diamonds,rank:.queen)]
         }
+        
         
     }
 //    加密操作
     func enCode(data:String)  {
-        var encoder = JSONEncoder()
+        let encoder = JSONEncoder()
         let jsData = try? encoder.encode(data)
-        String(data:jsData!,encoding:.utf8)
+        print(String(data:jsData!,encoding:.utf8)!)
         
-        var encoder1 = PropertyListEncoder()
+        let encoder1 = PropertyListEncoder()
         encoder1.outputFormat = .xml
         let proData = try? encoder1.encode(data)
-        String(data:proData!,encoding:.utf8)
+        print(String(data:proData!,encoding:.utf8)!)
     }
     
     //解密操作
     func deCode(data: Data)  {
-        var decoder = JSONDecoder()
+        let decoder = JSONDecoder()
         let jsData = try? decoder.decode([Card].self, from: data)
-        print(jsData)
-        
-        var decoder1 = PropertyListDecoder()
+        print(jsData!)
+    
+        let decoder1 = PropertyListDecoder()
         let jsData1 = try? decoder1.decode([Card].self, from: data)
-        jsData1![0].suit
+        print(jsData1![0].suit)
     }
     func dictInit() {
         let names = ["123","2131","sadewq"]

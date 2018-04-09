@@ -223,7 +223,7 @@
     }];
     // 所有按钮文字宽度 ＋ 按钮之间的间隔
     self.allBtnWidth = self.configure.spacingBetweenButtons * (self.titleArr.count + 1) + self.allBtnTextWidth;
-    self.allBtnWidth = ceilf(self.allBtnWidth);
+    self.allBtnWidth = ceilf(self.allBtnWidth);//小数取整,如果参数是小数则求大于本身的最小整数
     
     NSInteger titleCount = self.titleArr.count;
     if (self.allBtnWidth <= self.bounds.size.width) { // SGPageTitleView 静止样式

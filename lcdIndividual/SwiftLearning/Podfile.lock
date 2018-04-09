@@ -1,49 +1,43 @@
 PODS:
-  - Alamofire (4.7.0)
-  - AsyncDisplayKit (2.2.1):
-    - AsyncDisplayKit/PINRemoteImage (= 2.2.1)
-  - AsyncDisplayKit/Core (2.2.1)
-  - AsyncDisplayKit/PINRemoteImage (2.2.1):
-    - AsyncDisplayKit/Core
-    - PINRemoteImage/iOS (= 3.0.0-beta.8)
-    - PINRemoteImage/PINCache
+  - Alamofire (4.7.1)
+  - CocoaAsyncSocket (7.6.3)
+  - CocoaLumberjack (3.4.1):
+    - CocoaLumberjack/Default (= 3.4.1)
+    - CocoaLumberjack/Extensions (= 3.4.1)
+  - CocoaLumberjack/Default (3.4.1)
+  - CocoaLumberjack/Extensions (3.4.1):
+    - CocoaLumberjack/Default
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
+  - GTMRefresh (1.3.2)
+  - KissXML (5.2.2)
   - MJRefresh (3.1.15.3)
-  - PINCache (3.0.1-beta.4):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.4)
-    - PINCache/Core (= 3.0.1-beta.4)
-  - PINCache/Arc-exception-safe (3.0.1-beta.4):
-    - PINCache/Core
-  - PINCache/Core (3.0.1-beta.4):
-    - PINOperation (= 1.0.3)
-  - PINOperation (1.0.3)
-  - PINRemoteImage/Core (3.0.0-beta.8)
-  - PINRemoteImage/iOS (3.0.0-beta.8):
-    - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.0-beta.8):
-    - PINCache (= 3.0.1-beta.4)
-    - PINRemoteImage/Core
   - SGPagingView (1.3.6)
+  - XMPPFramework (3.7.0):
+    - CocoaAsyncSocket (~> 7.6.0)
+    - CocoaLumberjack
+    - KissXML (~> 5.2.0)
 
 DEPENDENCIES:
   - Alamofire
-  - AsyncDisplayKit
   - FMDB
+  - GTMRefresh
   - MJRefresh
   - SGPagingView
+  - XMPPFramework
 
 SPEC CHECKSUMS:
-  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
-  AsyncDisplayKit: 2234dd8d8770a5ed72936b3f8394bd5a807765f6
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  CocoaLumberjack: 2e258a064cacc8eb9a2aca318e24d02a0a7fd56d
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  GTMRefresh: 22e741fbad790f8dcc834d74d49770e1a55114ee
+  KissXML: 4418f32138aec43797891845d682b00fc8cd4677
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
-  PINCache: a89c8f609232afac77128557bd12c861844423d7
-  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
-  PINRemoteImage: c4f9f16932840c597f32e69dd288e10e111a1929
   SGPagingView: 4e9204cc62e4b63b269fbf48b4e8c9333adcd071
+  XMPPFramework: 6f99ad1afcdb0cdbec7192a8e4c542c3fc3de6f8
 
-PODFILE CHECKSUM: 71a0f6f5b253e35b91a9657f3b9b90c426d47a6b
+PODFILE CHECKSUM: c828ccf5c4830013751440969b491e2b8f19a422
 
 COCOAPODS: 1.4.0

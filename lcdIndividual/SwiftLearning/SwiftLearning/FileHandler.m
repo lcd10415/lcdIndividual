@@ -29,6 +29,7 @@
     NSLog(@"libraryPath = %@",libraryPath);
     //Caches：文件夹用于保存程序运行期间产生的缓存文件
      NSString *cachesPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)firstObject];
+    NSLog(@"cachesPath = %@",cachesPath);
     return documentPath;
 }
 - (void)writeFile{
@@ -71,7 +72,6 @@
     BOOL success = [fileManager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
     success ? NSLog(@"创建文件夹成功") : NSLog(@"创建文件夹失败");
     
-    
     path = [path stringByAppendingPathComponent:@"iOS.txt"];
     NSString * content = @"写入数据";
     success = [content writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:nil];
@@ -80,7 +80,6 @@
     NSLog(@"%@",file);
     BOOL isExist = [fileManager fileExistsAtPath:path];
     isExist ? NSLog(@"存在") : NSLog(@"不存在");
-    
 }
 @end
 

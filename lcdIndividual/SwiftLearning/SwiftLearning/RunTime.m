@@ -92,13 +92,22 @@ Runtime
 //字典转模型
 //1.根据字典的key字生成setter方法
 //2.使用objc_msgSend调用setter方法为Model的属性赋值(KVC)
+
 +(id)objectWithKeyValues:(NSDictionary *)aDictionary{
+    
+    @{@"name":@"123",
+      @"age":@"123",
+      @"address":@"23",
+      @"num":@"123",
+      @"length":@"123"
+      };
     id objc = [[self alloc] init];
     for (NSString *key in aDictionary.allKeys) {
         id value = aDictionary[key];
         /*判断当前属性是不是Model*/
         objc_property_t property = class_getProperty(self, key.UTF8String);
         unsigned int    outCount    = 0;
+        //获取属性特性列表
         objc_property_attribute_t *attributeList = property_copyAttributeList(property, &outCount);
         objc_property_attribute_t  attribute      = attributeList[0];
         NSString *typeString = [NSString stringWithUTF8String:attribute.value];
@@ -112,13 +121,14 @@ Runtime
         if ([objc respondsToSelector:setter]) {
             ((void (*) (id,SEL,id)) objc_msgSend) (objc,setter,value);
         }
+        free(attributeList);
     }
     return objc;
 }
 //导入头文件 <objc/runtime.h> <objc/message.h>
 /*
  类在runtime中的表示
- struct objc_class{
+ struct objc_class{  结构类型的指针
     Class isa; 指针， 实例的isa指向类对象，类对象的isa指向元类
     Class super_class 指向父类
     const char * name 类名
@@ -129,6 +139,10 @@ Runtime
  }
  
  [target doSomething];会被转化成 objc_msgSend(target,@selector(doSomething));
+ 
+ typedef struct objc_object{ /表示类的实例
+    Class isa
+ } * id 指向类实例的指针
  
  Runtime用法：
  在OOP术语中，消息传递是指一种在对象之间发送和接收消息的通信模式。 在Objective-C中，消息传递用于在调用类和类实例的方法，即接收者接收需要执行的消息

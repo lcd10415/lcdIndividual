@@ -27,15 +27,21 @@ class Relaxation: UIViewController,UICollectionViewDelegate,UICollectionViewData
     
     
     @IBOutlet weak var _vTypeView: UICollectionView!
-    let data = LoadPlist().readPlistFile(fileName: "Data") ?? []
+    let data = LoadPlist().readPlistFile(fileName: "Data")
     private let typeCellID = "TypeCellID"
     @IBOutlet weak var _layout: UICollectionViewFlowLayout!
+    /*
+     1.collectionView每次需要重新布局(初始化,layout 被设置为invalidated ...)的时候会首先调用这个方法prepareLayout().在cell比较少的情况下，一般可以用这个方法计算好所有的cell的布局并且缓存下来，在需要的时候直接取相应的值.
+     2.然后会调用layoutAttributesForElementsInRect(rect: CGRect)方法获取rect范围内的cell的所有布局，这个rect和collection的bounds不一样，size可能比collectionView大些，为了缓冲。 func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]?
+     3. 当collectionView的bounds变化的时候会调用shouldInvalidateLayoutForBoundsChange(newBounds: CGRect)这个方法
+     4. 需要设置collectionView 的滚动范围 collectionViewContentSize()
+     5. 以下方法, Apple建议我们也重写, 返回正确的自定义对象的布局,因为有时候当collectionView执行一些操作(delete insert reload)等系统会调用这些方法获取布局, 如果没有重写, 可能发生意想不到的效果
+     6. 这个方法是当collectionView将停止滚动的时候调用, 我们可以重写它来实现, collectionView停在指定的位置(比如照片浏览的时候, 你可以通过这个实现居中显示照片...)
+     */
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self._vTypeView.collectionViewLayout.
         _setupSpace()
-//        Dream.psychosexualityFriend("xxx",25,"xxxx")
         print("11111111111")
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {

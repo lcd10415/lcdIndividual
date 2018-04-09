@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface FileHandler : NSObject
-
+- (NSString *)filePath;
+- (void)writeFile;
+- (void)createFileAndDirectory;
 @end

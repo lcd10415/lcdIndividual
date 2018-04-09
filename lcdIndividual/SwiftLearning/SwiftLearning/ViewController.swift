@@ -14,11 +14,29 @@ import Alamofire
 class PB: UIViewController {
     
 }
+@available(iOS 10.0, *)
 class ViewController: UIViewController,UIViewControllerTransitioningDelegate{
 
     @IBOutlet weak var _vCenter: UIView!
     var bouncePresent:TransitionAnimation!
+    var animator: UIViewPropertyAnimator!
     
+    func handlePan(recognizer: UIPanGestureRecognizer) {
+        switch recognizer.state {
+        case .began:
+            animator = UIViewPropertyAnimator.init(duration: 1.0, curve: .easeOut, animations: {
+               
+            })
+            animator.pauseAnimation()
+        case .changed:
+            let translation = recognizer.translation(in: self.view)
+            animator.fractionComplete = translation.x / 300
+        case .ended:
+            animator.continueAnimation(withTimingParameters: nil, durationFactor: 0)
+        default:
+            break
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 //        应用程序的信息
@@ -111,9 +129,9 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate{
 //
 //        loadImage()
 //        setReplicatorLayer()
-//        let view = MapView()
-//        view.frame = CGRect(x:0,y:0,width:375,height:667);
-//        self.view.addSubview(view)
+        let view = MapView()
+        view.frame = CGRect(x:0,y:0,width:375,height:667);
+        self.view.addSubview(view)
         
 //        let test = Test()
 //        print("%@",test);
@@ -148,17 +166,36 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate{
 //            print(response)
 //
 //        }
-        let tab = TableViewFitHeight()
-        let subLab = UILabel()
-        subLab.numberOfLines = 0;
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineBreakMode = .byCharWrapping
-        let dict  = [NSAttributedStringKey.font:self.subLab.font,NSAttributedStringKey.paragraphStyle:paragraphStyle] as [NSAttributedStringKey : Any]
-        let rect = self.subLab.text?.boundingRect(with: self.subLab.bounds.size, options: .usesLineFragmentOrigin, attributes: dict, context: nil)
-        subLab.frame = CGRect(x:0,y:40,width:(rect?.width)!,height:(rect?.height)!)
-        subLab.font = UIFont.systemFont(ofSize: 13)
         
-        self.view.addSubview(subLab)
+        
+//        let tab = TableViewFitHeight()
+//        let subLab = UILabel()
+//        subLab.numberOfLines = 0;
+//        let paragraphStyle = NSMutableParagraphStyle()
+//        paragraphStyle.lineBreakMode = .byCharWrapping
+//        let dict  = [NSAttributedStringKey.font:self.subLab.font,NSAttributedStringKey.paragraphStyle:paragraphStyle] as [NSAttributedStringKey : Any]
+//        let rect = self.subLab.text?.boundingRect(with: self.subLab.bounds.size, options: .usesLineFragmentOrigin, attributes: dict, context: nil)
+//        subLab.frame = CGRect(x:0,y:40,width:(rect?.width)!,height:(rect?.height)!)
+//        subLab.font = UIFont.systemFont(ofSize: 13)
+//
+//        self.view.addSubview(subLab)
+        
+//        let file = FileHandler()
+//        file.filePath()
+//        file.writeFile()
+//        file.createFileAndDirectory()
+//
+//        typealias Point1 = (Int,Int)
+//        let origin: Point1 = (0,0)
+//        //元组类型
+//        var someTuple = (top: 10,bottom: 20)
+//        someTuple = (top: 2,botom: 2) as! (top: Int, bottom: Int)
+//        someTuple = (12,23)
+//
+//        var optInt: Optional<Int>
+//        var optInt: Int? //等价的
+        
+//        协议合成类型 protocol1 & protocol2
         
     }
 

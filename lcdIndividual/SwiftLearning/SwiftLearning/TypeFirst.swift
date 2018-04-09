@@ -12,7 +12,7 @@ struct LoadPlist {
         if let path = Bundle.main.path(forResource: fileName, ofType: "plist") {
         if let contents = NSArray(contentsOfFile: path) as? [String]{
             return contents
-        }
+            }
         }
         return []
     }

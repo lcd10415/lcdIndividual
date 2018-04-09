@@ -7,22 +7,28 @@
 //
 
 import UIKit
+import XMPPFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var stream: XMPPStream?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let vc = TableViewFitHeight()
+//        let vc = TableViewFitHeight()
+//        self.stream = XMPPStream()
+//        let rec = XMPPReconnect()
+//        rec?.activate(self.stream!)
+//        let vc = ViewController()
         
-        self.window = UIWindow(frame: UIScreen.main.bounds)
+//        self.window = UIWindow(frame: UIScreen.main.bounds)
 //        let vc = UIStoryboard(name: "Storyboard", bundle: nil).instantiateViewController(withIdentifier: "Relaxation") as? Relaxation
 //        Dream.psychosexualityFriend("xxx",50,"xxxx")
-        self.window!.rootViewController = vc
-        self.window!.makeKeyAndVisible()
+//        self.window!.rootViewController = vc
+//        self.window!.makeKeyAndVisible()
         
 //        print("\(bridge)")
         return true

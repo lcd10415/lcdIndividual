@@ -9,6 +9,12 @@
 import Foundation
 import Dispatch
 struct DispatchDemo{
+    /*
+    1.获取全局共享队列的方法 GCD有多个不同优先级的全局队列，
+     2.串行和并行队列的初始化函数
+     3.异步分发调用
+     4.同步分发调用
+     */
     //create DispatchQueue
     func initQueue()  {
         let queue = DispatchQueue(label:"com.1ktower.queue")

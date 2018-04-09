@@ -29,7 +29,6 @@ class LCDViewModel: NSObject {
                 temp.append(LCDCellModel.init(dict: value))
                 self.LCDInfo.append(temp)   
             }
-        
     }
     func numberOfSections() -> Int {
         return self.LCDInfo.count

@@ -110,8 +110,7 @@
 }
 //让应用直接闪退
 -(void)applicationCrash{
-    AppDelegate *app = [UIApplication sharedApplication].delegate;
-    UIWindow *window = app.window;
+    UIWindow *window = [UIApplication sharedApplication].delegate.window;
     [UIView animateWithDuration:1.0f animations:^{
         window.alpha = 0;
     } completion:^(BOOL finished) {

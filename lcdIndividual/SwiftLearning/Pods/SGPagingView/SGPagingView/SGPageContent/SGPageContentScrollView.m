@@ -124,7 +124,7 @@
     CGFloat currentOffsetX = scrollView.contentOffset.x;
     CGFloat scrollViewW = scrollView.bounds.size.width;
     if (currentOffsetX > self.startOffsetX) { // 左滑
-        // 1、计算 progress
+        // 1、计算 progress floor小数取整，如果参数是小数，则求小于本身最大整数.
         progress = currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW);
         // 2、计算 originalIndex
         originalIndex = currentOffsetX / scrollViewW;
