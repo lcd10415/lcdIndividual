@@ -48,6 +48,7 @@
 /*
 Runtime
  导入objc/message.h文件
+    [receiver selector]
     1.objc_msgSend(receiver,selector)
  OBJC_EXPORT void objc_msgSend(void // id self, SEL op, ...) 该函数有两个参数1.id类型，2.SEL类型
     2.ivars:指向该类的成员变量列表
@@ -187,6 +188,7 @@ Runtime
     free(ivarList);
 }
 
+//KVC 编码
 - (void)encodeWithCoder:(NSCoder *)encoder{
     unsigned int count = 0;
 //    成员变量列表
@@ -203,6 +205,7 @@ Runtime
     free(ivars);
 }
 
+//KVC解码
 - (id)initWithCoder:(NSCoder *)decoder{
     if (self = [super init]) {
         unsigned int count = 0;

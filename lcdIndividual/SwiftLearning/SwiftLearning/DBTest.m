@@ -54,7 +54,7 @@
                             @"4":stu.address,
                             @"5":stu.photo
                             };
-//    [self insertValue:data];
+    [self insertValue:data];
     [self getInfo];
     [self updateValue];
 }
