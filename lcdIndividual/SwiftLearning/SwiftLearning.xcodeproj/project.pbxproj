@@ -35,7 +35,6 @@
 		9A8441941FE0CE18000562E3 /* DBTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8441931FE0CE18000562E3 /* DBTest.m */; };
 		9A8446181FE10238000562E3 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8446171FE10238000562E3 /* Student.m */; };
 		9A84461B1FE13748000562E3 /* Knoweledge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84461A1FE13748000562E3 /* Knoweledge.m */; };
-		9A91BAE7203FEBCA00A929B9 /* TableViewFitHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91BAE6203FEBCA00A929B9 /* TableViewFitHeight.swift */; };
 		9AA584B120513CB60075FC06 /* FileHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA584B020513CB60075FC06 /* FileHandler.m */; };
 		9AA584B42051421D0075FC06 /* SingleFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA584B32051421D0075FC06 /* SingleFile.m */; };
 		9ACBA6111F4FF1440055052A /* Relaxation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBA6101F4FF1440055052A /* Relaxation.swift */; };
@@ -49,7 +48,6 @@
 		9AE0989220859671005663F1 /* WKWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE0989120859671005663F1 /* WKWeb.swift */; };
 		9AE79DA61FE2211D003D366A /* Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE79DA51FE2211D003D366A /* Subscript.swift */; };
 		9AE79FB61FE27054003D366A /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE79FB51FE27048003D366A /* Contacts.framework */; };
-		9AEF641E2060A0B700B214D9 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF641D2060A0B700B214D9 /* Tools.m */; };
 		9AF076911F189BC00075A9B4 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF076901F189BC00075A9B4 /* Singleton.swift */; };
 		9AF537291F5E4854004DD7D1 /* BridgeOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF537281F5E4854004DD7D1 /* BridgeOC.m */; };
 		9AF5372F1F5EAC1D004DD7D1 /* Arithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF5372E1F5EAC1D004DD7D1 /* Arithmetic.m */; };
@@ -102,7 +100,6 @@
 		9A8446171FE10238000562E3 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		9A8446191FE13748000562E3 /* Knoweledge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Knoweledge.h; sourceTree = "<group>"; };
 		9A84461A1FE13748000562E3 /* Knoweledge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Knoweledge.m; sourceTree = "<group>"; };
-		9A91BAE6203FEBCA00A929B9 /* TableViewFitHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewFitHeight.swift; path = /Users/a1/Desktop/temp/lcdIndividual/lcdIndividual/SwiftLearning/TableViewFitHeight.swift; sourceTree = "<absolute>"; };
 		9AA584AF20513CB60075FC06 /* FileHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileHandler.h; sourceTree = "<group>"; };
 		9AA584B020513CB60075FC06 /* FileHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileHandler.m; sourceTree = "<group>"; };
 		9AA584B22051421D0075FC06 /* SingleFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleFile.h; sourceTree = "<group>"; };
@@ -122,8 +119,6 @@
 		9AE0989120859671005663F1 /* WKWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWeb.swift; sourceTree = "<group>"; };
 		9AE79DA51FE2211D003D366A /* Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscript.swift; sourceTree = "<group>"; };
 		9AE79FB51FE27048003D366A /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
-		9AEF641C2060A0B600B214D9 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tools.h; path = /Users/a1/Desktop/temp/lcdIndividual/lcdIndividual/SwiftLearning/Tools.h; sourceTree = "<absolute>"; };
-		9AEF641D2060A0B700B214D9 /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Tools.m; path = /Users/a1/Desktop/temp/lcdIndividual/lcdIndividual/SwiftLearning/Tools.m; sourceTree = "<absolute>"; };
 		9AF076901F189BC00075A9B4 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		9AF537271F5E4854004DD7D1 /* BridgeOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeOC.h; sourceTree = "<group>"; };
 		9AF537281F5E4854004DD7D1 /* BridgeOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeOC.m; sourceTree = "<group>"; };
@@ -170,9 +165,6 @@
 		9AF7109F1F04E6320029135E = {
 			isa = PBXGroup;
 			children = (
-				9AEF641C2060A0B600B214D9 /* Tools.h */,
-				9AEF641D2060A0B700B214D9 /* Tools.m */,
-				9A91BAE6203FEBCA00A929B9 /* TableViewFitHeight.swift */,
 				9A6401C21FB98A8000B03C7A /* Block.h */,
 				9A6401C31FB98A8000B03C7A /* Block.m */,
 				9AF5372C1F5E49F7004DD7D1 /* Header.h */,
@@ -442,12 +434,10 @@
 				9ADB3BCC1FEB907400290FAD /* DropAndDrag.m in Sources */,
 				9AA584B42051421D0075FC06 /* SingleFile.m in Sources */,
 				9AE0989220859671005663F1 /* WKWeb.swift in Sources */,
-				9AEF641E2060A0B700B214D9 /* Tools.m in Sources */,
 				9A6388522011F1C3000655B4 /* CircleView.swift in Sources */,
 				9A8441941FE0CE18000562E3 /* DBTest.m in Sources */,
 				9AA584B120513CB60075FC06 /* FileHandler.m in Sources */,
 				9AF537291F5E4854004DD7D1 /* BridgeOC.m in Sources */,
-				9A91BAE7203FEBCA00A929B9 /* TableViewFitHeight.swift in Sources */,
 				9A60A16E1FD8DE6500EFE69A /* Lock.m in Sources */,
 				9A4B3B641F98885800FB7DF6 /* TransitionAnimation.m in Sources */,
 				9A6401C11FB9779700B03C7A /* RunTime.m in Sources */,
